@@ -1219,6 +1219,7 @@ label {
 }
 
 .cs-parallax > *:not([class*='cs-shape_']) {
+  display: none;
   position: relative;
   z-index: 5;
 }
