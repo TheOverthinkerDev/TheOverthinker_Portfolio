@@ -21,113 +21,27 @@
     <div class="cs-preloader cs-center">
       <div class="cs-preloader_in"></div>
     </div>
-    <!-- Start Header Section -->
-    <header class="cs-site_header cs-style1 text-uppercase cs-sticky_header">
+     <!-- Start Header Section -->
+     <header class="cs-site_header cs-style1 text-uppercase cs-sticky_header">
       <div class="cs-main_header">
         <div class="container">
           <div class="cs-main_header_in">
             <div class="cs-main_header_left">
-              <a class="cs-site_branding" href="index.html">
-                <img src="assets/img/logo.svg" alt="Logo">
+              <a class="cs-site_branding" href="index">
+                <img src="assets/img/logo.svg" alt="Logo" />
               </a>
             </div>
             <div class="cs-main_header_center">
               <div class="cs-nav cs-primary_font cs-medium">
-                <ul class="cs-nav_list">
-                  <li class="menu-item-has-children cs-mega_menu">
-                    <a href="index.html">Home</a>
-                    <ul class="cs-mega_wrapper">
-                      <li>
-                        <ul>
-                          <li>
-                            <a href="index.html" class="cs-nav_list_img">
-                              <img src="assets/img/demo/main-home.jpeg" alt="" />
-                            </a>
-                            <a href="index.html">Main Home</a>
-                          </li>
-                          <li>
-                            <a href="showcase-portfolio.html" class="cs-nav_list_img">
-                              <img src="assets/img/demo/showcase.jpeg" alt="" />
-                            </a>
-                            <a href="showcase-portfolio.html">Showcase Portfolio</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li>
-                        <ul>
-                          <li>
-                            <a href="photography-agency.html" class="cs-nav_list_img">
-                              <img src="assets/img/demo/photography-agency.jpeg" alt="" />
-                            </a>
-                            <a href="photography-agency.html">Photography Agency</a>
-                          </li>
-                          <li>
-                            <a href="case-study-showcase.html" class="cs-nav_list_img">
-                              <img src="assets/img/demo/case_study_showcase.jpeg" alt="" />
-                            </a>
-                            <a href="case-study-showcase.html">Case Study Showcase</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li>
-                        <ul>
-                          <li>
-                            <a href="creative-portfolio.html" class="cs-nav_list_img">
-                              <img src="assets/img/demo/portfolio.jpeg" alt="" />
-                            </a>
-                            <a href="creative-portfolio.html">Creative Portfolio</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li>
-                        <ul>
-                          <li>
-                            <a href="digital-agency.html" class="cs-nav_list_img">
-                              <img src="assets/img/demo/digital-agency.jpeg" alt="" />
-                            </a>
-                            <a href="digital-agency.html">Digital Agency</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li>
-                        <ul>
-                          <li>
-                            <a href="marketing-agency.html" class="cs-nav_list_img">
-                              <img src="assets/img/demo/marketing.jpeg" alt="" />
-                            </a>
-                            <a href="marketing-agency.html">Marketing Agency</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li>
-                        <ul>
-                          <li>
-                            <a href="freelancer-agency.html" class="cs-nav_list_img">
-                              <img src="assets/img/demo/freelancer-agency.jpeg" alt="" />
-                              <span class="cs-header_badge">New</span>
-                            </a>
-                            <a href="freelancer-agency.html">Freelancing Agency</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li>
-                        <ul>
-                          <li>
-                            <a href="https://arino-html-rtl.vercel.app" target="_blank" class="cs-nav_list_img">
-                              <img src="assets/img/demo/rtl.jpeg" alt="" />
-                              <span class="cs-header_badge">New</span>
-                            </a>
-                            <a href="https://arino-html-rtl.vercel.app" target="_blank">RTL Demo</a>
-                          </li>
-                        </ul>
-                      </li>
-                    </ul>
+                <ul class="cs-nav_list"> <!--trên này vẫn nguyên class "list"-->
+                  <li class="cs-mega_menu"> <!--đã xoá menu nhưng tên class vẫn giữ nguyên "cs-mega-menu", sẽ tìm cách đổi sau-->
+                    <a href="index.html">Trang chủ</a>
                   </li>
                   <li>
-                    <a href="about.html">About</a>
+                    <a href="about.html">Về tôi</a>
                   </li>
-                  <li class="menu-item-has-children">
-                    <a href="service.html">Services</a>
+                  <li class="menu-item-has-children"> <!--"menu-item-has-children" là class để có menu drop (không phải của bootstrap?)-->
+                    <a href="service.html">Dịch vụ</a>
                     <ul>
                       <li>
                         <a href="service.html">Services</a>
@@ -156,29 +70,9 @@
                       </li>
                       <li>
                         <a href="blog-details.html">Blog Details</a>
-                      </li>
+                      </li> 
                     </ul>
-                  </li>
-                  <li class="menu-item-has-children">
-                    <a href="#">Pages</a>
-                    <ul>
-                      <li>
-                        <a href="contact.html">Contact</a>
-                      </li>
-                      <li>
-                        <a href="team.html">Team</a>
-                      </li>
-                      <li>
-                        <a href="team-details.html">Team Details</a>
-                      </li>
-                      <li>
-                        <a href="case-study.html">Case Study Details</a>
-                      </li>
-                      <li>
-                        <a href="faq.html">FAQ</a>
-                      </li>
-                    </ul>
-                  </li>
+                  </li> 
                 </ul>
               </div>
             </div>
@@ -198,16 +92,17 @@
         </div>
       </div>
     </header>
-    <div class="cs-side_header">
+    <!--hamberger button trên giao diện desktop-->
+    <div class="cs-side_header"> 
       <button class="cs-close"></button>
       <div class="cs-side_header_overlay"></div>
       <div class="cs-side_header_in">
         <div class="cs-side_header_shape"></div>
         <a class="cs-site_branding" href="index.html">
-          <img src="assets/img/footer_logo.svg" alt="Logo">
+          <img src="assets/img/footer_logo.svg" alt="Logo" />
         </a>
         <div class="cs-side_header_box">
-          <h2 class="cs-side_header_heading">Do you have a project in your <br> mind? Keep connect us. </h2>
+          <h2 class="cs-side_header_heading"> Do you have a project in your <br /> mind? Keep connect us. </h2>
         </div>
         <div class="cs-side_header_box">
           <h3 class="cs-side_header_title cs-primary_color">Contact Us</h3>
@@ -228,7 +123,7 @@
               <svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M7 0C3.13 0 0 3.13 0 7C0 12.25 7 20 7 20C7 20 14 12.25 14 7C14 3.13 10.87 0 7 0ZM7 9.5C5.62 9.5 4.5 8.38 4.5 7C4.5 5.62 5.62 4.5 7 4.5C8.38 4.5 9.5 5.62 9.5 7C9.5 8.38 8.38 9.5 7 9.5Z" fill="#FF4A17" />
               </svg>
-              <span>50 Wall Street Suite, 44150 <br>Ohio, United States </span>
+              <span>50 Wall Street Suite, 44150 <br />Ohio, United States </span>
             </li>
           </ul>
         </div>
@@ -236,12 +131,12 @@
           <h3 class="cs-side_header_title cs-primary_color">Subscribe</h3>
           <div class="cs-newsletter cs-style1">
             <form action="#" class="cs-newsletter_form">
-              <input type="email" class="cs-newsletter_input" placeholder="example@gmail.com">
+              <input type="email" class="cs-newsletter_input" placeholder="example@gmail.com" />
               <button class="cs-newsletter_btn">
                 <span>Send</span>
               </button>
             </form>
-            <div class="cs-newsletter_text">At vero eos et accusamus et iusto odio as part dignissimos ducimus qui blandit.</div>
+            <div class="cs-newsletter_text"> At vero eos et accusamus et iusto odio as part dignissimos ducimus qui blandit. </div>
           </div>
         </div>
         <div class="cs-side_header_box">
