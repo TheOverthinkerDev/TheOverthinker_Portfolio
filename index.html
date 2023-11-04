@@ -27,20 +27,20 @@
         <div class="container">
           <div class="cs-main_header_in">
             <div class="cs-main_header_left">
-              <a class="cs-site_branding" href="index.html">
+              <a class="cs-site_branding" href="index">
                 <img src="assets/img/logo.svg" alt="Logo" />
               </a>
             </div>
             <div class="cs-main_header_center">
               <div class="cs-nav cs-primary_font cs-medium">
-                <ul class="cs-nav_list">
-                  <li class="cs-mega_menu">
+                <ul class="cs-nav_list"> <!--trên này vẫn nguyên class "list"-->
+                  <li class="cs-mega_menu"> <!--đã xoá menu nhưng tên class vẫn giữ nguyên "cs-mega-menu", sẽ tìm cách đổi sau-->
                     <a href="index.html">Trang chủ</a>
                   </li>
                   <li>
                     <a href="about.html">Về tôi</a>
                   </li>
-                  <li class="menu-item-has-children">
+                  <li class="menu-item-has-children"> <!--"menu-item-has-children" là class để có menu drop (không phải của bootstrap?)-->
                     <a href="service.html">Dịch vụ</a>
                     <ul>
                       <li>
@@ -70,29 +70,9 @@
                       </li>
                       <li>
                         <a href="blog-details.html">Blog Details</a>
-                      </li>
+                      </li> 
                     </ul>
-                  </li>
-                  <li class="menu-item-has-children">
-                    <a href="#">Pages</a>
-                    <ul>
-                      <li>
-                        <a href="contact.html">Contact</a>
-                      </li>
-                      <li>
-                        <a href="team.html">Team</a>
-                      </li>
-                      <li>
-                        <a href="team-details.html">Team Details</a>
-                      </li>
-                      <li>
-                        <a href="case-study.html">Case Study Details</a>
-                      </li>
-                      <li>
-                        <a href="faq.html">FAQ</a>
-                      </li>
-                    </ul>
-                  </li>
+                  </li> 
                 </ul>
               </div>
             </div>
@@ -112,7 +92,8 @@
         </div>
       </div>
     </header>
-    <div class="cs-side_header">
+    <!--hamberger button trên giao diện desktop-->
+    <div class="cs-side_header"> 
       <button class="cs-close"></button>
       <div class="cs-side_header_overlay"></div>
       <div class="cs-side_header_in">
@@ -186,13 +167,13 @@
     </div>
     <!-- End Header Section -->
     <!-- Start Hero -->
-    <div class="cs-hero cs-style1 cs-bg cs-fixed_bg cs-shape_wrap_1" data-src="assets/img/hero_bg.jpeg" id="home">
+    <div class="cs-hero cs-style1 cs-bg cs-fixed_bg cs-shape_wrap_1" data-src="assets/img/" id="home"> <!--nền trang chủ-->
       <div class="cs-shape_1"></div>
       <div class="cs-shape_1"></div>
       <div class="cs-shape_1"></div>
       <div class="container">
         <div class="cs-hero_text">
-          <h1 class="cs-hero_title wow fadeInRight" data-wow-duration="0.8s" data-wow-delay="0.2s"> Xin chào! Tôi là <br />Vinh Đẹp Trai</h1>
+          <h1 class="cs-hero_title wow fadeInRight" data-wow-duration="0.8s" data-wow-delay="0.2s"> Xin chào! Tôi là <br/>Vũ Anh Vinh</h1>
           <div class="cs-hero_info">
             <div>
               <a href="contact.html" class="cs-text_btn">
@@ -203,7 +184,7 @@
               </a>
             </div>
             <div>
-              <div class="cs-hero_subtitle"> Chúng tôi cung cấp giải pháp giải quyết vấn đề tốt nhất cho khách hàng và cung cấp sản phẩm hoàn thiện tốt nhất trong hiện tại và tương lai. </div>
+              <div class="cs-hero_subtitle"> Tôi cung cấp giải pháp giải quyết vấn đề tốt nhất cho khách hàng và cung cấp sản phẩm hoàn thiện tốt nhất trong hiện tại và tương lai. </div>
             </div>
           </div>
         </div>
@@ -225,51 +206,35 @@
     <!-- Start FunFact -->
     <section>
       <div class="container">
-        <div class="cs-funfact_wrap cs-type1">
+        <div class="cs-funfact_wrap_2 cs-type1">
           <div class="cs-funfact_shape" data-src="assets/img/funfact_shape_bg.svg"></div>
-          <div class="cs-funfact_left">
-            <div class="cs-funfact_heading">
-              <h2>Một vài số liệu vui</h2>
-              <p> Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis. </p>
+          <div class="cs-funfacts">
+            <div>
+              <div class="cs-funfact cs-style2">
+                <div class="cs-funfact_number cs-primary_font cs-semi_bold cs-primary_color">
+                  <span data-count-to="550" class="odometer"></span> <span class="cs-plus">+</span></div>
+                <h3 class="cs-funfact_title">Năm kinh nghiệm</h3>
+              </div>
             </div>
-          </div>
-          <div class="cs-funfact_right">
-            <div class="cs-funfacts">
-              <div class="cs-funfact cs-style1">
+            <div>
+              <div class="cs-funfact cs-style2">
                 <div class="cs-funfact_number cs-primary_font cs-semi_bold cs-primary_color">
-                  <span data-count-to="40" class="odometer"></span>K
-                </div>
-                <div class="cs-funfact_text">
-                  <span class="cs-accent_color">+</span>
-                  <p>Năm kinh nghiệm</p>
-                </div>
+                  <span data-count-to="40" class="odometer"></span>K <span class="cs-plus">+</span></div>
+                <h3 class="cs-funfact_title">Dự án</h3>
               </div>
-              <div class="cs-funfact cs-style1">
+            </div>
+            <div>
+              <div class="cs-funfact cs-style2">
                 <div class="cs-funfact_number cs-primary_font cs-semi_bold cs-primary_color">
-                  <span data-count-to="50" class="odometer"></span>K
-                </div>
-                <div class="cs-funfact_text">
-                  <span class="cs-accent_color">+</span>
-                  <p>Dự án đã hoàn thành</p>
-                </div>
+                  <span data-count-to="50" class="odometer"></span>K <span class="cs-plus">+</span></div>
+                <h3 class="cs-funfact_title">Khách hàng</h3>
               </div>
-              <div class="cs-funfact cs-style1">
+            </div>
+            <div>
+              <div class="cs-funfact cs-style2">
                 <div class="cs-funfact_number cs-primary_font cs-semi_bold cs-primary_color">
-                  <span data-count-to="245" class="odometer"></span>
-                </div>
-                <div class="cs-funfact_text">
-                  <span class="cs-accent_color">+</span>
-                  <p>Team Members</p>
-                </div>
-              </div>
-              <div class="cs-funfact cs-style1">
-                <div class="cs-funfact_number cs-primary_font cs-semi_bold cs-primary_color">
-                  <span data-count-to="550" class="odometer"></span>
-                </div>
-                <div class="cs-funfact_text">
-                  <span class="cs-accent_color">+</span>
-                  <p>Digital products</p>
-                </div>
+                  <span data-count-to="250" class="odometer"></span> <span class="cs-plus">+</span></div>
+                <h3 class="cs-funfact_title">Team members</h3>
               </div>
             </div>
           </div>
@@ -281,86 +246,28 @@
     <section id="service">
       <div class="cs-height_150 cs-height_lg_80"></div>
       <div class="container">
-        <div class="row">
-          <div class="col-xl-4">
-            <div class="cs-section_heading cs-style1">
-              <h3 class="cs-section_subtitle">Tôi có thể làm gì</h3>
-              <h2 class="cs-section_title">Những kỹ năng nổi cmn bật</h2>
-              <div class="cs-height_45 cs-height_lg_20"></div>
-              <a href="service.html" class="cs-text_btn wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="0.2s">
-                <span>See All Services</span>
-                <svg width="26" height="12" viewBox="0 0 26 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M25.5303 6.53033C25.8232 6.23744 25.8232 5.76256 25.5303 5.46967L20.7574 0.696699C20.4645 0.403806 19.9896 0.403806 19.6967 0.696699C19.4038 0.989593 19.4038 1.46447 19.6967 1.75736L23.9393 6L19.6967 10.2426C19.4038 10.5355 19.4038 11.0104 19.6967 11.3033C19.9896 11.5962 20.4645 11.5962 20.7574 11.3033L25.5303 6.53033ZM0 6.75H25V5.25H0V6.75Z" fill="currentColor"></path>
-                </svg>
-              </a>
-            </div>
-            <div class="cs-height_90 cs-height_lg_45"></div>
-          </div>
-          <div class="col-xl-8">
-            <div class="row">
-              <div class="col-lg-3 col-sm-6 cs-hidden_mobile"></div>
-              <div class="col-lg-3 col-sm-6">
-                <div class="cs-hobble">
-                  <a href="service-details.html" class="cs-card cs-style1 cs-hover_layer1">
-                    <img src="assets/img/service_1.jpeg" alt="Service" />
-                    <div class="cs-card_overlay"></div>
-                    <div class="cs-card_info">
-                      <span class="cs-hover_layer3 cs-accent_bg"></span>
-                      <h2 class="cs-card_title">UI/UX design</h2>
-                    </div>
-                  </a>
-                </div>
-                <div class="cs-height_0 cs-height_lg_30"></div>
-              </div>
-              <div class="col-lg-3 col-sm-6 cs-hidden_mobile"></div>
-              <div class="col-lg-3 col-sm-6">
-                <div class="cs-hobble">
-                  <a href="service-details.html" class="cs-card cs-style1 cs-hover_layer1">
-                    <img src="assets/img/service_2.jpeg" alt="Service" />
-                    <div class="cs-card_overlay"></div>
-                    <div class="cs-card_info">
-                      <span class="cs-hover_layer3 cs-accent_bg"></span>
-                      <h2 class="cs-card_title">React.js Development</h2>
-                    </div>
-                  </a>
-                </div>
-                <div class="cs-height_0 cs-height_lg_30"></div>
-              </div>
-              <div class="col-lg-3 col-sm-6">
-                <div class="cs-hobble">
-                  <a href="service-details.html" class="cs-card cs-style1 cs-hover_layer1">
-                    <img src="assets/img/service_3.jpeg" alt="Service" />
-                    <div class="cs-card_overlay"></div>
-                    <div class="cs-card_info">
-                      <span class="cs-hover_layer3 cs-accent_bg"></span>
-                      <h2 class="cs-card_title">Digital Marketing</h2>
-                    </div>
-                  </a>
-                </div>
-                <div class="cs-height_0 cs-height_lg_30"></div>
-              </div>
-              <div class="col-lg-3 col-sm-6 cs-hidden_mobile"></div>
-              <div class="col-lg-3 col-sm-6">
-                <div class="cs-hobble">
-                  <a href="service-details.html" class="cs-card cs-style1 cs-hover_layer1">
-                    <img src="assets/img/service_4.jpeg" alt="Service" />
-                    <div class="cs-card_overlay"></div>
-                    <div class="cs-card_info">
-                      <span class="cs-hover_layer3 cs-accent_bg"></span>
-                      <h2 class="cs-card_title">Technology</h2>
-                    </div>
-                  </a>
-                </div>
-                <div class="cs-height_0 cs-height_lg_30"></div>
-              </div>
-              <div class="col-lg-3 col-sm-6 cs-hidden_mobile"></div>
-            </div>
-          </div>
+        <div class="cs-section_heading cs-style1 text-center">
+          <h3 class="cs-section_subtitle">Dịch vụ</h3>
+          <h2 class="cs-section_title wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">Những điều tôi có thể làm</h2>
         </div>
       </div>
-      <div class="cs-height_150 cs-height_lg_50"></div>
+      <div class="cs-height_65 cs-height_lg_45"></div>
+      <div class="cs-moving_text_wrap cs-type1 cs-bold cs-primary_font">
+        <div class="cs-moving_text_in">
+          <div class="cs-moving_text"><a href="service-details.html">Packaging Design</a>-<a href="service-details.html">Magazine Design</a>-<a href="service-details.html">Branding</a>-</div>
+          <div class="cs-moving_text"><a href="service-details.html">Packaging Design</a>-<a href="service-details.html">Magazine Design</a>-<a href="service-details.html">Branding</a>-</div>
+        </div>
+      </div>
+      <div class="cs-height_30 cs-height_lg_10"></div>
+      <div class="cs-moving_text_wrap cs-type1 cs-bold cs-primary_font">
+        <div class="cs-moving_text_in">
+          <div class="cs-moving_text cs-reverse_animation"><a href="service-details.html">Layout</a>-<a href="service-details.html">Landing Page</a>-<a href="service-details.html">Basic Animation</a>-</div>
+          <div class="cs-moving_text cs-reverse_animation"><a href="service-details.html">Layout</a>-<a href="service-details.html">Landing Page</a>-<a href="service-details.html">Basic Animation</a>-</div>
+        </div>
+      </div>
     </section>
     <!-- End Service Section -->
+    <div class="cs-height_150 cs-height_lg_80"></div> <!-- khoảng cách -->
     <!-- Start Latest Project -->
     <section>
       <div class="container">
@@ -379,8 +286,8 @@
                 <div class="cs-portfolio_bg" data-src="assets/img/portfolio_1.jpeg"></div>
                 <div class="cs-portfolio_info">
                   <div class="cs-portfolio_info_bg cs-accent_bg"></div>
-                  <h2 class="cs-portfolio_title">Colorful Art Work</h2>
-                  <div class="cs-portfolio_subtitle">See Details</div>
+                  <h2 class="cs-portfolio_title">Thiết kế bao bì Lock&Lock</h2>
+                  <div class="cs-portfolio_subtitle">Xem chi tiết</div>
                 </div>
               </a>
             </div>
@@ -428,7 +335,7 @@
           <div class="cs-slider_left">
             <div class="cs-section_heading cs-style1">
               <h3 class="cs-section_subtitle wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="0.2s"> Timeline kinh nghiệm </h3>
-              <h2 class="cs-section_title">We get multiple awards</h2>
+              <h2 class="cs-section_title">Liên tục trau dồi bản thân</h2>
             </div>
             <div class="cs-height_45 cs-height_lg_20"></div>
             <div class="cs-slider_arrows cs-style1 cs-primary_color">
@@ -478,39 +385,6 @@
                     <p>Mobile exelence</p>
                   </div>
                 </div>
-                <!-- .cs-slide -->
-                <div class="cs-slide">
-                  <div class="cs-time_line cs-style1">
-                    <h3 class="cs-accent_color">2019</h3>
-                    <h2>Google awards</h2>
-                    <p>Website of the day</p>
-                    <p>Mobile exelence</p>
-                  </div>
-                  <div class="cs-height_40 cs-height_lg_30"></div>
-                  <div class="cs-time_line cs-style1">
-                    <h3 class="cs-accent_color">2021</h3>
-                    <h2>CSS awards design</h2>
-                    <p>Honorable mention</p>
-                    <p>Desktop exelence</p>
-                  </div>
-                </div>
-                <!-- .cs-slide -->
-                <div class="cs-slide">
-                  <div class="cs-time_line cs-style1">
-                    <h3 class="cs-accent_color">2020</h3>
-                    <h2>New technology innovation</h2>
-                    <p>Honorable mention</p>
-                    <p>Desktop exelence</p>
-                  </div>
-                  <div class="cs-height_40 cs-height_lg_30"></div>
-                  <div class="cs-time_line cs-style1">
-                    <h3 class="cs-accent_color">2022</h3>
-                    <h2>UI/UX design of the month</h2>
-                    <p>Website of the day</p>
-                    <p>Mobile exelence</p>
-                  </div>
-                </div>
-                <!-- .cs-slide -->
               </div>
             </div>
             <!-- .cs-slider_container -->
@@ -545,7 +419,7 @@
           <div class="cs-slider_heading cs-style1">
             <div class="cs-section_heading cs-style1">
               <h3 class="cs-section_subtitle wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="0.2s"> Team của chúng tôi </h3>
-              <h2 class="cs-section_title">Những thành viên <br />tuyệt vời </h2>
+              <h2 class="cs-section_title"> Những thành viên <br /> hoạt động cùng The Overthinker </h2>
             </div>
             <div class="cs-slider_arrows cs-style1 cs-primary_color">
               <div class="cs-left_arrow cs-center">
@@ -571,9 +445,9 @@
                   </div>
                   <div class="cs-member_info">
                     <h2 class="cs-member_name">
-                      <a href="team-details.html">Chiến thó</a>
+                      <a href="team-details.html">TheOverthinker.dsgn</a>
                     </h2>
-                    <div class="cs-member_designation">Product Designer</div>
+                    <div class="cs-member_designation">Graphic Designer</div>
                   </div>
                   <div class="cs-member_social cs-primary_color">
                     <a href="#">
@@ -608,9 +482,9 @@
                   </div>
                   <div class="cs-member_info">
                     <h2 class="cs-member_name">
-                      <a href="team-details.html">Font Lòng</a>
+                      <a href="team-details.html">TheOverthinker.dev</a>
                     </h2>
-                    <div class="cs-member_designation">Project Manager</div>
+                    <div class="cs-member_designation">Front-end Developer</div>
                   </div>
                   <div class="cs-member_social cs-primary_color">
                     <a href="#">
@@ -645,9 +519,9 @@
                   </div>
                   <div class="cs-member_info">
                     <h2 class="cs-member_name">
-                      <a href="team-details.html">David Elone</a>
+                      <a href="team-details.html">TheOverthinker.img</a>
                     </h2>
-                    <div class="cs-member_designation">React Developer</div>
+                    <div class="cs-member_designation">Photograper</div>
                   </div>
                   <div class="cs-member_social cs-primary_color">
                     <a href="#">
@@ -682,9 +556,9 @@
                   </div>
                   <div class="cs-member_info">
                     <h2 class="cs-member_name">
-                      <a href="team-details.html">Melina Opole</a>
+                      <a href="team-details.html">Vũ Anh Vinh</a>
                     </h2>
-                    <div class="cs-member_designation">WP Developer</div>
+                    <div class="cs-member_designation">Media</div>
                   </div>
                   <div class="cs-member_social cs-primary_color">
                     <a href="#">
@@ -710,44 +584,6 @@
                   </div>
                 </div>
               </div>
-              <!-- .cs-slide -->
-              <div class="cs-slide">
-                <div class="cs-team cs-style1">
-                  <div class="cs-member_thumb">
-                    <img src="assets/img/member_1.jpeg" alt="Member" />
-                    <div class="cs-member_overlay"></div>
-                  </div>
-                  <div class="cs-member_info">
-                    <h2 class="cs-member_name">
-                      <a href="team-details.html">Melon Bulgery</a>
-                    </h2>
-                    <div class="cs-member_designation">Product Designer</div>
-                  </div>
-                  <div class="cs-member_social cs-primary_color">
-                    <a href="#">
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M5.39756 18.333H1.9422V7.20581H5.39756V18.333ZM3.66802 5.68795C2.56311 5.68795 1.6669 4.77277 1.6669 3.66786C1.6669 3.13714 1.87773 2.62814 2.25301 2.25286C2.6283 1.87758 3.13729 1.66675 3.66802 1.66675C4.19875 1.66675 4.70774 1.87758 5.08302 2.25286C5.4583 2.62814 5.66913 3.13714 5.66913 3.66786C5.66913 4.77277 4.77256 5.68795 3.66802 5.68795ZM18.3298 18.333H14.8819V12.9164C14.8819 11.6255 14.8559 9.96995 13.0854 9.96995C11.2889 9.96995 11.0136 11.3725 11.0136 12.8234V18.333H7.56199V7.20581H10.876V8.72367H10.9243C11.3857 7.84941 12.5125 6.92679 14.1937 6.92679C17.6907 6.92679 18.3336 9.22962 18.3336 12.2207V18.333H18.3298Z" fill="currentColor" />
-                      </svg>
-                    </a>
-                    <a href="#">
-                      <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M15.6204 3.60521C15.631 3.75325 15.631 3.90133 15.631 4.04938C15.631 8.56502 12.194 13.7681 5.91227 13.7681C3.97697 13.7681 2.17918 13.2076 0.666901 12.2347C0.941869 12.2664 1.20623 12.277 1.49177 12.277C3.08862 12.277 4.55861 11.7377 5.73248 10.8176C4.23078 10.7859 2.97231 9.80236 2.53872 8.44871C2.75024 8.48042 2.96173 8.50158 3.18384 8.50158C3.49051 8.50158 3.79722 8.45926 4.08273 8.38527C2.51759 8.06798 1.34369 6.69321 1.34369 5.03288V4.99059C1.79842 5.2444 2.32723 5.40303 2.88768 5.42416C1.96762 4.81078 1.36485 3.76383 1.36485 2.57939C1.36485 1.94488 1.53403 1.36324 1.83015 0.855618C3.51164 2.92838 6.03915 4.282 8.87331 4.43008C8.82045 4.17627 8.78871 3.91191 8.78871 3.64752C8.78871 1.76509 10.3116 0.231689 12.2045 0.231689C13.188 0.231689 14.0764 0.644126 14.7003 1.31037C15.4723 1.16232 16.2126 0.876777 16.8683 0.485499C16.6144 1.27867 16.0751 1.94491 15.3666 2.3679C16.054 2.2939 16.7202 2.10351 17.3336 1.83915C16.8683 2.51594 16.2867 3.11871 15.6204 3.60521V3.60521Z" fill="currentColor" />
-                      </svg>
-                    </a>
-                    <a href="#">
-                      <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M16.9853 1.97421C16.7936 1.25247 16.2289 0.684051 15.5118 0.491149C14.212 0.140625 9.00023 0.140625 9.00023 0.140625C9.00023 0.140625 3.78845 0.140625 2.48868 0.491149C1.7716 0.684081 1.20685 1.25247 1.01517 1.97421C0.666901 3.28241 0.666901 6.01183 0.666901 6.01183C0.666901 6.01183 0.666901 8.74126 1.01517 10.0495C1.20685 10.7712 1.7716 11.3159 2.48868 11.5088C3.78845 11.8594 9.00023 11.8594 9.00023 11.8594C9.00023 11.8594 14.212 11.8594 15.5118 11.5088C16.2289 11.3159 16.7936 10.7712 16.9853 10.0495C17.3336 8.74126 17.3336 6.01183 17.3336 6.01183C17.3336 6.01183 17.3336 3.28241 16.9853 1.97421ZM7.29568 8.48995V3.53372L11.6517 6.01189L7.29568 8.48995Z" fill="currentColor" />
-                      </svg>
-                    </a>
-                    <a href="#">
-                      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4.16839 11.1987C4.16839 12.1623 3.38119 12.9495 2.41764 12.9495C1.4541 12.9495 0.666901 12.1623 0.666901 11.1987C0.666901 10.2352 1.4541 9.448 2.41764 9.448H4.16839V11.1987ZM5.05083 11.1987C5.05083 10.2352 5.83803 9.448 6.80157 9.448C7.76511 9.448 8.55232 10.2352 8.55232 11.1987V15.5827C8.55232 16.5462 7.76511 17.3334 6.80157 17.3334C5.83803 17.3334 5.05083 16.5462 5.05083 15.5827V11.1987ZM6.80157 4.16824C5.83803 4.16824 5.05083 3.38103 5.05083 2.41749C5.05083 1.45395 5.83803 0.666748 6.80157 0.666748C7.76511 0.666748 8.55232 1.45395 8.55232 2.41749V4.16824H6.80157ZM6.80157 5.05068C7.76511 5.05068 8.55232 5.83788 8.55232 6.80142C8.55232 7.76496 7.76511 8.55217 6.80157 8.55217H2.41764C1.4541 8.55217 0.666901 7.76496 0.666901 6.80142C0.666901 5.83788 1.4541 5.05068 2.41764 5.05068H6.80157ZM13.8321 6.80142C13.8321 5.83788 14.6193 5.05068 15.5828 5.05068C16.5464 5.05068 17.3336 5.83788 17.3336 6.80142C17.3336 7.76496 16.5464 8.55217 15.5828 8.55217H13.8321V6.80142ZM12.9496 6.80142C12.9496 7.76496 12.1624 8.55217 11.1989 8.55217C10.2354 8.55217 9.44815 7.76496 9.44815 6.80142V2.41749C9.44815 1.45395 10.2354 0.666748 11.1989 0.666748C12.1624 0.666748 12.9496 1.45395 12.9496 2.41749V6.80142ZM11.1989 13.8319C12.1624 13.8319 12.9496 14.6191 12.9496 15.5827C12.9496 16.5462 12.1624 17.3334 11.1989 17.3334C10.2354 17.3334 9.44815 16.5462 9.44815 15.5827V13.8319H11.1989ZM11.1989 12.9495C10.2354 12.9495 9.44815 12.1623 9.44815 11.1987C9.44815 10.2352 10.2354 9.448 11.1989 9.448H15.5828C16.5464 9.448 17.3336 10.2352 17.3336 11.1987C17.3336 12.1623 16.5464 12.9495 15.5828 12.9495H11.1989Z" fill="currentColor" />
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <!-- .cs-slide -->
             </div>
           </div>
           <!-- .cs-slider_container -->
@@ -961,7 +797,8 @@
     </section>
     <!-- End Testimonial Section -->
 
-    <!-- Start Blog Section -->
+    <!-- Start Blog Section --> 
+    <!--blog đã được ẩn :3-->
     <section class="cs-shape_wrap_4 cs-parallax">
       <div class="cs-shape_4 cs-to_up"></div>
       <div class="cs-shape_4 cs-to_right"></div>
@@ -1086,13 +923,13 @@
       </div>
       <div class="cs-height_125 cs-height_lg_70"></div>
     </section>
-     End Blog Section -->
+    <!--End Blog Section -->
   
     <!-- End Moving Text -->
     <div class="cs-moving_text_wrap cs-bold cs-primary_font">
       <div class="cs-moving_text_in">
-        <div class="cs-moving_text">Our reputed world wide partners</div>
-        <div class="cs-moving_text">Our reputed world wide partners</div>
+        <div class="cs-moving_text">- Đối tác / chiến hữu của tôi</div>
+        <div class="cs-moving_text">- Đối tác / chiến hữu của tôi</div>
       </div>
     </div>
     <div class="cs-height_100 cs-height_lg_70"></div>
@@ -1107,12 +944,6 @@
         </div>
         <div class="cs-partner_logo">
           <img src="assets/img/partner_3.svg" alt="Partner" />
-        </div>
-        <div class="cs-partner_logo">
-          <img src="assets/img/partner_4.svg" alt="Partner" />
-        </div>
-        <div class="cs-partner_logo">
-          <img src="assets/img/partner_5.svg" alt="Partner" />
         </div>
       </div>
     </div>
@@ -1148,7 +979,7 @@
               <div class="cs-footer_item">
                 <div class="cs-text_widget">
                   <img src="assets/img/footer_logo.svg" alt="" />
-                  <p> Welcome to arino sed ut perspiciae omunde omnis iste natus error sitort voluptatem accusantium. </p>
+                  <p> Đừng ngại ngần về việc liên hệ tôi, tôi sẽ phản hồi nhanh nhất có thể để không mất thời gian của đôi bên! </p>
                 </div>
                 <div class="cs-social_btns cs-style1">
                   <a href="#" class="cs-center">
@@ -1176,44 +1007,45 @@
             </div>
             <div class="col-lg-3 col-sm-6">
               <div class="cs-footer_item">
-                <h2 class="cs-widget_title">Services</h2>
+                <h2 class="cs-widget_title">Dịch vụ</h2>
                 <ul class="cs-menu_widget cs-mp0">
                   <li>
-                    <a href="service-details.html">UI/UX design</a>
+                    <a href="service-details.html">Packaging Design</a>
                   </li>
                   <li>
-                    <a href="service-details.html">WP development</a>
+                    <a href="service-details.html">Magazine Design</a>
                   </li>
                   <li>
-                    <a href="service-details.html">Digital marketing</a>
-                  </li>
-                  <li>
-                    <a href="service-details.html">React development</a>
+                    <a href="service-details.html">Animation</a>
                   </li>
                 </ul>
               </div>
             </div>
             <div class="col-lg-3 col-sm-6">
               <div class="cs-footer_item">
-                <h2 class="cs-widget_title">Contact Us</h2>
+                <h2 class="cs-widget_title">Hit me up!</h2>
                 <ul class="cs-menu_widget cs-mp0">
                   <li>55/53 Jay Path Apt. 908</li>
-                  <li>+44 454 7800 112</li>
-                  <li>sbechtelar@example.net</li>
+                  <li>
+                    <a href="tel:0964454669">+84 964 454 669</a>
+                  </li>
+                  <li>
+                    <a href="mailto:theoverthinker.dsgn@gmail.com">theoverthinker.dsgn@gmail.com</a>
+                  </li>
                 </ul>
               </div>
             </div>
             <div class="col-lg-3 col-sm-6">
               <div class="cs-footer_item">
-                <h2 class="cs-widget_title">Subscribe</h2>
+                <h2 class="cs-widget_title">Đăng kí</h2>
                 <div class="cs-newsletter cs-style1">
                   <form action="#" class="cs-newsletter_form">
-                    <input type="email" class="cs-newsletter_input" placeholder="example@gmail.com" />
+                    <input type="email" class="cs-newsletter_input" placeholder="Chức năng đang được" />
                     <button class="cs-newsletter_btn">
-                      <span>Send</span>
+                      <span>bảo trì!</span>
                     </button>
                   </form>
-                  <div class="cs-newsletter_text"> At vero eos et accusamus et iusto odio as part dignissimos ducimus qui blandit. </div>
+                  <div class="cs-newsletter_text"> Nhận những thông báo mới nhất từ tôi. </div>
                 </div>
               </div>
             </div>
@@ -1223,12 +1055,12 @@
       <div class="container">
         <div class="cs-bottom_footer">
           <div class="cs-bottom_footer_left">
-            <div class="cs-copyright">Copyright © 2023 Laralink.</div>
+            <div class="cs-copyright">Copyright © 2023 TheOverthinker.dev</div>
           </div>
           <div class="cs-bottom_footer_right">
             <ul class="cs-footer_links cs-mp0">
               <li>
-                <a href="">Terms of Use</a>
+                <a href="LICENSE">LICENSE</a>
               </li>
               <li>
                 <a href="">Privacy Policy</a>
