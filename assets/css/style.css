@@ -144,8 +144,7 @@ button {
 }
 
 a:hover {
-  text-decoration: none; /*màu hover*/
-  color: #6667AB;
+  text-decoration: none; /*màu của tất cả hover*/
 }
 
 table {
@@ -1870,7 +1869,7 @@ label {
   height: 0px;
   border-top: 9px solid transparent;
   border-bottom: 9px solid transparent;
-  border-left: 14px solid #176cff; /*màu hình tam giác*/
+  border-left: 14px solid #F5DF4C; /*màu shape*/
 }
 
 .cs-shape_wrap_1 {
@@ -1928,7 +1927,7 @@ label {
 }
 
 .cs-shape_2 div {
-  background-color: #000;
+  background-color: #F5DF4C;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   height: 100%;
@@ -1963,7 +1962,7 @@ label {
 
 .cs-shape_wrap_4 .cs-shape_4 {
   position: absolute;
-  background-color: #000; /*màu hình tròn*/
+  background-color: #F5DF4C; /*màu hình tròn*/
   border-radius: 50%;
 }
 
@@ -3968,9 +3967,13 @@ label {
         -ms-flex-align: center;
             align-items: center;
     height: 100%;
+    font-weight: 400;
     font-size: 15px;
     line-height: 1.6em;
-    color: #53548A; /*màu chữ navbar*/
+    color: #6667AB; /*màu chữ navbar*/
+  }
+  .cs-nav  a:hover { /*màu hover navbar*/
+    color: #53548A;
   }
   .cs-nav .cs-nav_list {
     display: -webkit-box !important;
@@ -4002,7 +4005,8 @@ label {
     left: 0;
     top: calc(100% + 15px);
   }
-  .cs-nav .cs-nav_list > li:hover > ul {
+  .cs-nav .cs-nav_list > li:hover > ul { /* màu chữ của menu drop */
+    color: #494A78;
     top: 100%;
     opacity: 1;
     visibility: visible;
@@ -4032,7 +4036,7 @@ label {
   }
   .cs-nav .cs-nav_list ul {
     width: 260px;
-    background-color: #181818;
+    background-color: #DFDEEF;
     position: absolute;
     -webkit-box-shadow: 0px 1px 2px 0px rgba(2, 0, 181, 0.1);
             box-shadow: 0px 1px 2px 0px rgba(2, 0, 181, 0.1);
@@ -4357,16 +4361,18 @@ ul:not(.cs-mega_wrapper)
 /*--------------------------------------------------------------
   8. Footer
 ----------------------------------------------------------------*/
-.cs-fooer_main {  
+.cs-footer_main {  
   padding: 95px 0 35px;
 }
 
-
+.cs-footer_main li a:hover{ /*Màu hover footer*/
+  color: #494A78;
+}
 
 .cs-footer_item { /*Màu chữ Footer*/
   color: #919191;
   margin-bottom: 40px;
-}
+}idget
 
 .cs-footer_item .cs-newsletter.cs-style1 {
   margin-top: 6px;
@@ -4431,7 +4437,7 @@ ul:not(.cs-mega_wrapper)
   height: 50px;
   width: 100%;
   border-radius: 10px;
-  background-color: #fffbfb; /*Màu nền ô nhập email*/
+  background-color: #DFDEEF; /*Màu nền ô nhập email*/
   border: none;
   padding: 5px 90px 5px 15px;
   outline: none;
@@ -4442,7 +4448,7 @@ ul:not(.cs-mega_wrapper)
   padding: 7px 25px;
   border-radius: 10px;
   color: #fff;
-  background-color: #120401; /*Màu nền nút đăng ký*/
+  background-color: #444572; /*Màu nền nút đăng ký*/
   position: absolute;
   top: 5px;
   right: 5px;
@@ -4458,7 +4464,7 @@ ul:not(.cs-mega_wrapper)
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(22, 22, 22, 0.4);
+  background: #F7EA96;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
   -webkit-transform-origin: 0 50%;
@@ -4551,7 +4557,7 @@ ul:not(.cs-mega_wrapper)
   .cs-newsletter.cs-style1 .cs-newsletter_text {
     margin-top: 15px;
   }
-  .cs-fooer_main {
+  .cs-footer_main {
     padding: 60px 0 15px;
   }
 }
@@ -4714,7 +4720,8 @@ ul:not(.cs-mega_wrapper)
   margin-right: 28px;
 }
 
-.cs-isotop_filter.cs-style1 a { 
+.cs-isotop_filter.cs-style1 a {
+  color: #DFDEEF; /*Màu chữ filter*/
   display: inline-block;
   position: relative;
   padding-bottom: 10px;
@@ -5097,6 +5104,14 @@ ul:not(.cs-mega_wrapper)
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.cs-hero.cs-style1 .cs-hero_social_links a:hover,
+.cs-hero.cs-style2 .cs-hero_social_links a:hover,
+.cs-hero.cs-style3 .cs-hero_social_links a:hover,
+.cs-swiper_parallax_slider_wrap .cs-hero_social_links a:hover,
+.cs-fullscreen_swiper_wrap .cs-hero_social_links a:hover {
+  color: #FF0000; 
 }
 
 .cs-hero.cs-style1 .cs-hero_social_links li,
