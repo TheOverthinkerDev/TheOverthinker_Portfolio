@@ -30,7 +30,8 @@
 /*--------------------------------------------------------------
 1. Typography
 ----------------------------------------------------------------*/
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Readex Pro:wght@400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap');
 body,
 html {
   color: rgba(254, 254, 254, 0.7);
@@ -39,7 +40,7 @@ html {
   font-weight: 400;
   line-height: 1.6em;
   overflow-x: hidden;
-  background-color: #e1e1e1;
+  background-color: #ffffff;
 }
 
 h1,
@@ -49,16 +50,16 @@ h4,
 h5,
 h6 {
   clear: both;
-  color: #FEFEFE;
+  color: #ffffff;
   padding: 0;
   margin: 0 0 20px 0;
   font-weight: 600;
   line-height: 1.3em;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Readex Pro', sans-serif;
 }
 
 .cs-primary_font {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Readex Pro', sans-serif;
 }
 
 .cs-secondary_font {
@@ -143,8 +144,8 @@ button {
 }
 
 a:hover {
-  text-decoration: none;
-  color: #FF4A17;
+  text-decoration: none; /*màu hover*/
+  color: #6667AB;
 }
 
 table {
@@ -215,7 +216,7 @@ input, textarea {
   top: 0;
   width: 100%;
   height: 100vh;
-  background-color: #181818;
+  background-color: #6667AB;
 }
 
 .cs-preloader_bg {
@@ -238,7 +239,7 @@ input, textarea {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 28px;
-  border: 3px solid rgba(255, 255, 255, 0.8);
+  border: 3px solid rgba(223, 222, 239, 0.8);
   border-radius: 50%;
 }
 
@@ -247,7 +248,7 @@ input, textarea {
   border-width: 3px;
   border-style: solid;
   border-color: transparent;
-  border-top-color: #FF4A17;
+  border-top-color: #494A78;
   border-radius: 50%;
   position: absolute;
   width: calc(100% + 6px);
@@ -270,7 +271,7 @@ input, textarea {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  background-color: #FF4A17;
+  background-color: #53548A;
 }
 
 @-webkit-keyframes spin {
@@ -698,6 +699,7 @@ input, textarea {
 }
 
 .cs-m0 {
+  color: #000; /*màu quote*/
   margin: 0;
 }
 
@@ -758,7 +760,7 @@ hr {
 
 .cs-accent_color,
 .cs-accent_color_hover:hover {
-  color: #FF4A17;
+  color: #6667AB;
 }
 
 .cs-white_bg {
@@ -876,7 +878,7 @@ hr {
 
 .cs-accent_bg,
 .cs-accent_bg_hover:hover {
-  background-color: #FF4A17;
+  background-color: #6667AB;
 }
 
 .cs-primary_bg,
@@ -896,7 +898,7 @@ hr {
       -ms-flex-align: center;
           align-items: center;
   font-weight: 600;
-  color: #fff;
+  color: #53548A;
 }
 
 .cs-text_btn svg {
@@ -904,6 +906,7 @@ hr {
 }
 
 .cs-text_btn span {
+  color: #6667AB; /* màu nút tải có mũi tên */
   display: inline-block;
   position: relative;
 }
@@ -978,7 +981,7 @@ hr {
   line-height: 1.5em;
   font-weight: 600;
   border-radius: 15px;
-  background-color: #FF4A17;
+  background-color: #6667AB;
   color: #fff;
   cursor: pointer;
 }
@@ -1075,7 +1078,7 @@ hr {
 }
 
 .cs-pagination_item.active {
-  background-color: #FF4A17;
+  background-color: #6667AB;
   color: #fff;
   pointer-events: none;
 }
@@ -1094,7 +1097,7 @@ hr {
 }
 
 .cs-form_field:focus {
-  border-color: #FF4A17;
+  border-color: #6667AB;
 }
 
 label {
@@ -1180,11 +1183,11 @@ label {
 }
 
 .cs-accordian_head:hover .cs-accordian_title {
-  color: #FF4A17;
+  color: #6667AB;
 }
 
 .cs-accordian {
-  border-bottom: 2px solid #FF4A17;
+  border-bottom: 2px solid #6667AB;
   padding-bottom: 25px;
 }
 
@@ -1247,7 +1250,7 @@ label {
 .cs-cursor_lg {
   width: 40px;
   height: 40px;
-  border: 1px solid #FF4A17;
+  border: 1px solid #6667AB;
   left: 0;
   top: 0;
   pointer-events: none;
@@ -1258,7 +1261,7 @@ label {
 .cs-cursor_sm {
   width: 8px;
   height: 8px;
-  background-color: #FF4A17;
+  background-color: #6667AB;
   left: 0;
   top: 0;
   pointer-events: none;
@@ -1444,7 +1447,7 @@ label {
   font-size: 120px;
   line-height: 1.2em;
   color: transparent;
-  -webkit-text-stroke: 2px #FF4A17;
+  -webkit-text-stroke: 2px #6667AB;
 }
 
 .cs-moving_text_in {
@@ -1476,7 +1479,7 @@ label {
 }
 
 .cs-moving_text_wrap.cs-type1 {
-  color: #FF4A17;
+  color: #6667AB;
 }
 
 .cs-moving_text_wrap.cs-type1 .cs-moving_text {
@@ -1487,7 +1490,7 @@ label {
 
 .cs-moving_text_wrap.cs-type1 .cs-moving_text a:hover {
   color: transparent;
-  -webkit-text-stroke: 2px #FF4A17;
+  -webkit-text-stroke: 2px #6667AB;
 }
 
 .cs-moving_text_wrap.cs-type1:hover .cs-moving_text {
@@ -1663,12 +1666,13 @@ label {
 }
 
 .cs-section_heading.cs-style1 .cs-section_subtitle {
-  color: #999696;
+  color: #434343;
   font-size: 18px;
   margin-bottom: 20px;
 }
 
 .cs-section_heading.cs-style1 .cs-section_title {
+  color: #000000; /*màu phần title*/
   font-size: 50px;
   margin-bottom: 0;
 }
@@ -1866,7 +1870,7 @@ label {
   height: 0px;
   border-top: 9px solid transparent;
   border-bottom: 9px solid transparent;
-  border-left: 14px solid #FF4A17;
+  border-left: 14px solid #176cff; /*màu hình tam giác*/
 }
 
 .cs-shape_wrap_1 {
@@ -1932,6 +1936,7 @@ label {
 }
 
 .cs-shape_wrap_2 {
+  color: #000; /*màu timeline*/
   position: relative;
 }
 
@@ -1958,7 +1963,7 @@ label {
 
 .cs-shape_wrap_4 .cs-shape_4 {
   position: absolute;
-  background-color: #000;
+  background-color: #000; /*màu hình tròn*/
   border-radius: 50%;
 }
 
@@ -2072,7 +2077,7 @@ label {
   top: -30px;
   height: 151px;
   width: 151px;
-  background: #FF4A17;
+  background: #6667AB;
   opacity: 0.8;
   -webkit-filter: blur(125px);
           filter: blur(125px);
@@ -2140,7 +2145,7 @@ label {
   width: 100%;
   right: -60px;
   bottom: -60px;
-  background-color: #FF4A17;
+  background-color: #6667AB;
   border-radius: inherit;
 }
 
@@ -2193,7 +2198,7 @@ label {
 }
 
 .cs-tab_links.cs-style1 li.active a {
-  background-color: #FF4A17;
+  background-color: #6667AB;
   border-radius: 10px;
 }
 
@@ -2311,15 +2316,15 @@ label {
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
   z-index: 10;
-  background-color: #000000;
-  color: #FF4A17;
+  background-color: #000000; /*màu nút scroll lên*/
+  color: #6667AB;
   -webkit-box-shadow: 0px 1px 5px 1px rgba(22, 22, 22, 0.2);
           box-shadow: 0px 1px 5px 1px rgba(22, 22, 22, 0.2);
   border-radius: 50%;
 }
 
 .cs-scrollup:hover {
-  background-color: #FF4A17;
+  background-color: #6667AB;
   color: #fff;
 }
 
@@ -2385,7 +2390,7 @@ label {
   position: absolute;
   height: 7px;
   width: 0%;
-  background-color: #FF4A17;
+  background-color: #6667AB;
   left: 0;
   bottom: 20px;
   z-index: -1;
@@ -2813,8 +2818,8 @@ label {
 .cs-pagination.cs-style1 li {
   height: 16px;
   width: 16px;
-  background-color: #FF4A17;
-  border: 1px solid #FF4A17;
+  background-color: #6667AB;
+  border: 1px solid #6667AB;
   border-radius: 50%;
   margin: 0 8px;
   cursor: pointer;
@@ -2833,7 +2838,7 @@ label {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  background-color: #FF4A17;
+  background-color: #6667AB;
 }
 
 .cs-pagination.cs-style1 li.slick-active {
@@ -2861,8 +2866,8 @@ label {
 .cs-swiper_pagination .swiper-pagination-bullet {
   height: 16px;
   width: 16px;
-  background-color: #FF4A17;
-  border: 1px solid #FF4A17;
+  background-color: #6667AB;
+  border: 1px solid #6667AB;
   border-radius: 50%;
   margin: 0 8px !important;
   cursor: pointer;
@@ -2882,7 +2887,7 @@ label {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  background-color: #FF4A17;
+  background-color: #6667AB;
 }
 
 .cs-swiper_pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
@@ -2949,7 +2954,7 @@ label {
 }
 
 .swiper-vertical > .swiper-pagination-bullets.cs-swiper_pagination.cs-slide_numbers .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  color: #FF4A17;
+  color: #6667AB;
 }
 
 .swiper-vertical > .swiper-pagination-bullets.cs-swiper_pagination.cs-slide_numbers .swiper-pagination-bullet:nth-child(1)::after {
@@ -3012,8 +3017,8 @@ label {
 
 .cs-slider_arrows.cs-style1 .slick-arrow:hover {
   color: #fff;
-  background-color: #FF4A17;
-  border-color: #FF4A17;
+  background-color: #6667AB;
+  border-color: #6667AB;
 }
 
 .cs-slider_arrows.cs-style2 .slick-arrow {
@@ -3143,8 +3148,8 @@ label {
 }
 
 .slider-for .slick-arrow:hover {
-  background-color: #FF4A17;
-  border-color: #FF4A17;
+  background-color: #6667AB;
+  border-color: #6667AB;
 }
 
 .slider-for .slick-prev {
@@ -3542,7 +3547,7 @@ label {
   position: absolute;
   width: 100%;
   left: 0;
-  top: 10px;
+  top: 0px; /*chiều cao navbar*/
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
@@ -3574,11 +3579,6 @@ label {
   height: 100%;
 }
 
-.cs-site_header.cs-style1.cs-sticky-active {
-  background-color: #fff;
-  -webkit-box-shadow: 0 10px 10px -10px rgba(33, 43, 53, 0.1);
-          box-shadow: 0 10px 10px -10px rgba(33, 43, 53, 0.1);
-}
 
 .cs-site_header.cs-style1 .cs-icon_btn {
   display: -webkit-box;
@@ -3855,7 +3855,7 @@ label {
 }
 
 .cs-close:hover {
-  color: #FF4A17;
+  color: #6667AB;
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
@@ -3865,7 +3865,7 @@ label {
   right: 5px;
   top: 0;
   font-size: 12px;
-  background-color: #FF4A17;
+  background-color: #6667AB;
   color: #fff;
   display: inline-block;
   line-height: 1.6em;
@@ -3902,7 +3902,7 @@ label {
   opacity: 0;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
-  background-color: #000;
+  background-color: #ffffff; /*màu nền khi kéo xuống navbar*/
 }
 
 .cs-gescout_show {
@@ -3970,7 +3970,7 @@ label {
     height: 100%;
     font-size: 15px;
     line-height: 1.6em;
-    color: #fff;
+    color: #53548A; /*màu chữ navbar*/
   }
   .cs-nav .cs-nav_list {
     display: -webkit-box !important;
@@ -4036,7 +4036,7 @@ label {
     position: absolute;
     -webkit-box-shadow: 0px 1px 2px 0px rgba(2, 0, 181, 0.1);
             box-shadow: 0px 1px 2px 0px rgba(2, 0, 181, 0.1);
-    border-top: 2px solid #FF4A17;
+    border-top: 2px solid #6667AB;
     padding: 10px 0;
     z-index: 100;
     opacity: 0;
@@ -4357,11 +4357,14 @@ ul:not(.cs-mega_wrapper)
 /*--------------------------------------------------------------
   8. Footer
 ----------------------------------------------------------------*/
-.cs-fooer_main {
+.cs-fooer_main {  
   padding: 95px 0 35px;
 }
 
-.cs-footer_item {
+
+
+.cs-footer_item { /*Màu chữ Footer*/
+  color: #919191;
   margin-bottom: 40px;
 }
 
@@ -4369,7 +4372,8 @@ ul:not(.cs-mega_wrapper)
   margin-top: 6px;
 }
 
-.cs-widget_title {
+.cs-widget_title { /*Màu chữ tiêu đề footer*/
+  color: #6667AB;
   font-size: 18px;
   margin-bottom: 35px;
 }
@@ -4405,18 +4409,18 @@ ul:not(.cs-mega_wrapper)
   height: 36px;
   width: 36px;
   border-radius: 50%;
-  border: 2px solid #fff;
+  border: 2px solid #DFDEEF; /*Màu viền icon*/
   margin: 7px;
 }
 
 .cs-social_btns.cs-style1 a:hover {
-  border-color: #FF4A17;
+  border-color: #6667AB;
   -webkit-transform: scale(1.08);
           transform: scale(1.08);
 }
 
 .cs-social_btns.cs-style1 a:hover svg {
-  fill: #FF4A17;
+  fill: #6667AB;
 }
 
 .cs-newsletter.cs-style1 .cs-newsletter_form {
@@ -4427,7 +4431,7 @@ ul:not(.cs-mega_wrapper)
   height: 50px;
   width: 100%;
   border-radius: 10px;
-  background-color: #000;
+  background-color: #fffbfb; /*Màu nền ô nhập email*/
   border: none;
   padding: 5px 90px 5px 15px;
   outline: none;
@@ -4438,7 +4442,7 @@ ul:not(.cs-mega_wrapper)
   padding: 7px 25px;
   border-radius: 10px;
   color: #fff;
-  background-color: #FF4A17;
+  background-color: #120401; /*Màu nền nút đăng ký*/
   position: absolute;
   top: 5px;
   right: 5px;
@@ -4487,6 +4491,7 @@ ul:not(.cs-mega_wrapper)
 }
 
 .cs-footer_links {
+  color: #000000; /*Màu chữ link footer*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4502,6 +4507,7 @@ ul:not(.cs-mega_wrapper)
 }
 
 .cs-bottom_footer {
+  color: #000000; /*Màu chữ copyright*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4575,7 +4581,7 @@ ul:not(.cs-mega_wrapper)
 }
 
 .cs-isotop.cs-has_gutter_24 {
-  margin-left: -12px;
+  margin-left: -12px; 
   margin-right: -12px;
   margin-bottom: -24px;
 }
@@ -4708,7 +4714,7 @@ ul:not(.cs-mega_wrapper)
   margin-right: 28px;
 }
 
-.cs-isotop_filter.cs-style1 a {
+.cs-isotop_filter.cs-style1 a { 
   display: inline-block;
   position: relative;
   padding-bottom: 10px;
@@ -4722,7 +4728,7 @@ ul:not(.cs-mega_wrapper)
   left: 50%;
   margin-left: -5px;
   border-radius: 50%;
-  background-color: #FF4A17;
+  background-color: #6667AB; 
   bottom: -5px;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
@@ -4743,7 +4749,7 @@ ul:not(.cs-mega_wrapper)
 }
 
 .cs-isotop_filter.cs-style1 .active a {
-  color: #FF4A17;
+  color: #6667AB;
 }
 
 .cs-isotop_filter.cs-style1 .active a::before {
@@ -4873,8 +4879,8 @@ ul:not(.cs-mega_wrapper)
 
 .tag-cloud-link:hover {
   color: #fff;
-  background-color: #FF4A17;
-  border-color: #FF4A17;
+  background-color: #6667AB;
+  border-color: #6667AB;
 }
 
 .widget_archive ul,
@@ -4972,7 +4978,7 @@ ul:not(.cs-mega_wrapper)
 }
 
 .cs-sidebar_search input:focus {
-  border-color: #FF4A17;
+  border-color: #6667AB;
 }
 
 .cs-sidebar_search_btn {
@@ -4989,7 +4995,7 @@ ul:not(.cs-mega_wrapper)
 }
 
 .cs-sidebar_search_btn:hover {
-  color: #FF4A17;
+  color: #6667AB;
 }
 
 .cs-author_card img {
@@ -5055,7 +5061,7 @@ ul:not(.cs-mega_wrapper)
 .cs-hero.cs-style3 .cs-hero_social_title,
 .cs-swiper_parallax_slider_wrap .cs-hero_social_title,
 .cs-fullscreen_swiper_wrap .cs-hero_social_title {
-  color:#ff7f7f;
+  color:#000000; /* Màu chứ theo dõi*/
   position: relative;
   padding-bottom: 35px;
   white-space: nowrap;
@@ -5084,7 +5090,7 @@ ul:not(.cs-mega_wrapper)
 .cs-hero.cs-style3 .cs-hero_social_links,
 .cs-swiper_parallax_slider_wrap .cs-hero_social_links,
 .cs-fullscreen_swiper_wrap .cs-hero_social_links {
-  color:#ff7f7f;
+  color:#030303; /* màu link theo dõi*/
   list-style: none;
   margin: 0;
   padding: 0;
@@ -5141,7 +5147,8 @@ ul:not(.cs-mega_wrapper)
   min-height: 1000px;
 }
 
-.cs-hero.cs-style1 .cs-hero_title {
+.cs-hero.cs-style1 .cs-hero_title { /* màu chữ phần hero */
+  color: #000;
   font-size: 120px;
   font-weight: 700;
   margin-bottom: 60px;
@@ -5151,7 +5158,7 @@ ul:not(.cs-mega_wrapper)
 .cs-hero.cs-style1 .cs-hero_subtitle {
   font-size: 18px;
   line-height: 1.9em;
-  color: #FEFEFE;
+  color: #53548A; /* màu chữ phần mô tả hero */
 }
 
 .cs-hero.cs-style1 .cs-hero_info {
@@ -5228,7 +5235,7 @@ ul:not(.cs-mega_wrapper)
   height: 35px;
   width: 20px;
   border-radius: 10px;
-  border: 2px solid #fff;
+  border: 2px solid #000000;
   bottom: 25%;
   left: 50%;
   margin-left: -10px;
@@ -5244,7 +5251,7 @@ ul:not(.cs-mega_wrapper)
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  background-color: #fff;
+  background-color: #060606;
   -webkit-animation: UpAndDown 3s infinite;
           animation: UpAndDown 3s infinite;
 }
@@ -5280,7 +5287,7 @@ ul:not(.cs-mega_wrapper)
   width: 0%;
   left: 0;
   top: 50%;
-  background-color: #FF4A17;
+  background-color: #6667AB;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
@@ -5468,7 +5475,7 @@ ul:not(.cs-mega_wrapper)
   width: 100%;
   bottom: 8px;
   left: 0;
-  background-color: #FF4A17;
+  background-color: #6667AB;
   z-index: -1;
 }
 
@@ -5537,7 +5544,7 @@ ul:not(.cs-mega_wrapper)
 
 .cs-swiper_button_prev:hover,
 .cs-swiper_button_next:hover {
-  color: #FF4A17;
+  color: #6667AB;
 }
 
 .cs-swiper_button_prev {
@@ -6026,8 +6033,8 @@ ul:not(.cs-mega_wrapper)
 
 .cs-iconbox_3_list .cs-hover_tab.active .cs-iconbox_icon {
   color: #fff;
-  background-color: #FF4A17;
-  border-color: #FF4A17;
+  background-color: #6667AB;
+  border-color: #6667AB;
 }
 
 .cs-iconbox_3_list.cs-style1 {
@@ -6084,8 +6091,8 @@ ul:not(.cs-mega_wrapper)
 
 .cs-iconbox.cs-style3 .cs-iconbox_icon:hover {
   color: #fff;
-  background-color: #FF4A17;
-  border-color: #FF4A17;
+  background-color: #6667AB;
+  border-color: #6667AB;
 }
 
 .cs-iconbox.cs-style3 .cs-iconbox_title {
@@ -6099,8 +6106,8 @@ ul:not(.cs-mega_wrapper)
 
 .cs-iconbox.cs-style3:hover .cs-iconbox_icon {
   color: #fff;
-  background-color: #FF4A17;
-  border-color: #FF4A17;
+  background-color: #6667AB;
+  border-color: #6667AB;
 }
 
 @-webkit-keyframes inactiveImageAnimation1 {
@@ -6403,7 +6410,7 @@ ul:not(.cs-mega_wrapper)
 .cs-post.cs-style2 blockquote {
   font-size: 18px;
   line-height: 1.9em;
-  border-left: 5px solid #FF4A17;
+  border-left: 5px solid #6667AB;
   background-color: #000;
   padding: 40px 35px;
   font-weight: 600;
@@ -6501,7 +6508,7 @@ ul:not(.cs-mega_wrapper)
 }
 
 .cs-post.cs-style3 .cs-text_btn {
-  color: #FF4A17;
+  color: #6667AB;
 }
 
 .cs-post.cs-style3 .cs-posted_by {
@@ -6815,7 +6822,8 @@ ul:not(.cs-mega_wrapper)
   z-index: 2;
 }
 
-.cs-cta.cs-style1 .cs-cta_title {
+.cs-cta.cs-style1 .cs-cta_title { /*màu phần quote*/
+  color: #ffffff;
   font-weight: 600;
   font-size: 50px;
 }
@@ -6857,12 +6865,13 @@ ul:not(.cs-mega_wrapper)
 /*--------------------------------------------------------------
   18. Timeline
 ----------------------------------------------------------------*/
-.cs-time_line.cs-style1 h3 {
+.cs-time_line.cs-style1 h3 { /*màu phần năm timeline(xem xét thay đổi)*/
   font-size: 30px;
   margin-bottom: 15px;
 }
 
 .cs-time_line.cs-style1 h2 {
+  color: #000000; /*màu phần timeline*/
   font-size: 22px;
   margin-bottom: 10px;
 }
@@ -7230,7 +7239,7 @@ ul:not(.cs-mega_wrapper)
   white-space: nowrap;
   letter-spacing: 0.05em;
   color: transparent;
-  -webkit-text-stroke: 2px #FF4A17;
+  -webkit-text-stroke: 2px #6667AB;
   font-size: 50px;
 }
 
@@ -7597,7 +7606,7 @@ ul:not(.cs-mega_wrapper)
   top: -55px;
   height: 135px;
   width: 135px;
-  background: #FF4A17;
+  background: #6667AB;
   -webkit-filter: blur(125px);
           filter: blur(125px);
   -webkit-transition: all 0.4s ease;
@@ -8013,7 +8022,7 @@ ul:not(.cs-mega_wrapper)
 
 .rtl .cs-post.cs-style2 blockquote {
   border-left: 0;
-  border-right: 5px solid #FF4A17;
+  border-right: 5px solid #6667AB;
 }
 
 .rtl .cs-page_navigation > div:not(:last-child) {
