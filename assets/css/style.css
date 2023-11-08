@@ -190,6 +190,11 @@ kbd {
   border-radius: 5px;
 }
 
+::selection {
+  color: rgb(255, 255, 255);
+  background: #7F56D9;
+}
+
 @media screen and (max-width: 991px) {
   body,
   html {
@@ -215,7 +220,7 @@ input, textarea {
   top: 0;
   width: 100%;
   height: 100vh;
-  background-color: #6667AB;
+  background-color: #f1f1f1;
 }
 
 .cs-preloader_bg {
@@ -238,20 +243,20 @@ input, textarea {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 28px;
-  border: 3px solid rgba(223, 222, 239, 0.8);
+  border: 10px solid rgba(223, 222, 239, 0.8);
   border-radius: 50%;
 }
 
 .cs-preloader_in:after {
   content: "";
-  border-width: 3px;
+  border-width: 10px;
   border-style: solid;
   border-color: transparent;
-  border-top-color: #494A78;
+  border-top-color: #7F56D9;
   border-radius: 50%;
   position: absolute;
-  width: calc(100% + 6px);
-  height: calc(100% + 6px);
+  width: calc(100% + 18px);
+  height: calc(100% + 18px);
   left: 50%;
   top: 50%;
   -webkit-animation: spin 1s ease-in-out infinite;
@@ -262,15 +267,15 @@ input, textarea {
 
 .cs-preloader_in::before {
   content: '';
-  height: 8px;
-  width: 8px;
+  height: 50px;
+  width: 50px;
   border-radius: 50%;
   position: absolute;
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  background-color: #6941C6;
+  background-color: #7F56D9;
 }
 
 @-webkit-keyframes spin {
@@ -877,7 +882,7 @@ hr {
 
 .cs-accent_bg,
 .cs-accent_bg_hover:hover {
-  background-color: #6667AB;
+  background-color: #6941C6;
 }
 
 .cs-primary_bg,
@@ -905,7 +910,7 @@ hr {
 }
 
 .cs-text_btn span {
-  color: #6667AB; /* màu nút tải có mũi tên */
+  color: #6941C6; /* màu nút tải có mũi tên */
   display: inline-block;
   position: relative;
 }
@@ -929,7 +934,7 @@ hr {
   -webkit-transition-duration: 0.6s;
           transition-duration: 0.6s;
   -webkit-transition-timing-function: ease-out;
-          transition-timing-function: ease-out;
+          transition-timing-function: ease-out; 
 }
 
 .cs-text_btn:hover span::before {
@@ -980,7 +985,7 @@ hr {
   line-height: 1.5em;
   font-weight: 600;
   border-radius: 15px;
-  background-color: #6667AB;
+  background-color: #6941C6;
   color: #fff;
   cursor: pointer;
 }
@@ -1077,7 +1082,7 @@ hr {
 }
 
 .cs-pagination_item.active {
-  background-color: #6667AB;
+  background-color: #6941C6;
   color: #fff;
   pointer-events: none;
 }
@@ -1096,7 +1101,7 @@ hr {
 }
 
 .cs-form_field:focus {
-  border-color: #6667AB;
+  border-color: #6941C6;
 }
 
 label {
@@ -1182,11 +1187,11 @@ label {
 }
 
 .cs-accordian_head:hover .cs-accordian_title {
-  color: #6667AB;
+  color: #6941C6;
 }
 
 .cs-accordian {
-  border-bottom: 2px solid #6667AB;
+  border-bottom: 2px solid #6941C6;
   padding-bottom: 25px;
 }
 
@@ -1249,7 +1254,7 @@ label {
 .cs-cursor_lg {
   width: 40px;
   height: 40px;
-  border: 1px solid #6667AB;
+  border: 1px solid #6941C6;
   left: 0;
   top: 0;
   pointer-events: none;
@@ -1260,7 +1265,7 @@ label {
 .cs-cursor_sm {
   width: 8px;
   height: 8px;
-  background-color: #6667AB;
+  background-color: #6941C6;
   left: 0;
   top: 0;
   pointer-events: none;
@@ -1274,20 +1279,18 @@ label {
 .odometer.odometer-theme-default,
 .odometer.odometer-theme-default .odometer-digit {
   display: inline-block;
-  vertical-align: middle;
   position: relative;
 }
 
 .odometer.odometer-auto-theme .odometer-digit .odometer-digit-spacer,
 .odometer.odometer-theme-default .odometer-digit .odometer-digit-spacer {
   display: inline-block;
-  vertical-align: middle;
   visibility: hidden;
 }
 
 .odometer.odometer-auto-theme .odometer-digit .odometer-digit-inner,
 .odometer.odometer-theme-default .odometer-digit .odometer-digit-inner {
-  text-align: left;
+  text-align: center;
   display: block;
   position: absolute;
   top: 0;
@@ -1441,10 +1444,10 @@ label {
 }
 
 .cs-moving_text_wrap {
-  font-family: Open Sans;
-  font-size: 120px;
-  line-height: 1.2em;
-  -webkit-text-stroke: 2px #6668aa;
+  font-family: 'Open Sans';
+  font-size: 140px;
+  line-height: 1.3em;
+  -webkit-text-stroke: 2px #6941C6;
 }
 
 .cs-moving_text_in {
@@ -1472,12 +1475,11 @@ label {
 }
 
 .cs-moving_text > * {
-  
   margin: 0 20px;
 }
 
 .cs-moving_text_wrap.cs-type1 {
-  color: #6668aa;
+  color: #6941C6;
 
 }
 
@@ -2076,7 +2078,7 @@ label {
   top: -30px;
   height: 151px;
   width: 151px;
-  background: #6667AB;
+  background: #6941C6;
   opacity: 0.8;
   -webkit-filter: blur(125px);
           filter: blur(125px);
@@ -2144,7 +2146,7 @@ label {
   width: 100%;
   right: -60px;
   bottom: -60px;
-  background-color: #6667AB;
+  background-color: #6941C6;
   border-radius: inherit;
 }
 
@@ -2197,7 +2199,7 @@ label {
 }
 
 .cs-tab_links.cs-style1 li.active a {
-  background-color: #6667AB;
+  background-color: #6941C6;
   border-radius: 10px;
 }
 
@@ -2316,14 +2318,14 @@ label {
   transition: all 0.4s ease;
   z-index: 10;
   background-color: #efefef; /*màu nút scroll lên*/
-  color: #6667AB;
+  color: #6941C6;
   -webkit-box-shadow: 0px 1px 5px 1px rgba(22, 22, 22, 0.2);
           box-shadow: 0px 1px 5px 1px rgba(22, 22, 22, 0.2);
   border-radius: 50%;
 }
 
 .cs-scrollup:hover {
-  background-color: #6667AB;
+  background-color: #6941C6;
   color: #fff;
 }
 
@@ -2389,7 +2391,7 @@ label {
   position: absolute;
   height: 7px;
   width: 0%;
-  background-color: #6667AB;
+  background-color: #6941C6;
   left: 0;
   bottom: 20px;
   z-index: -1;
@@ -2817,8 +2819,8 @@ label {
 .cs-pagination.cs-style1 li {
   height: 16px;
   width: 16px;
-  background-color: #6667AB;
-  border: 1px solid #6667AB;
+  background-color: #6941C6;
+  border: 1px solid #6941C6;
   border-radius: 50%;
   margin: 0 8px;
   cursor: pointer;
@@ -2837,7 +2839,7 @@ label {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  background-color: #6667AB;
+  background-color: #6941C6;
 }
 
 .cs-pagination.cs-style1 li.slick-active {
@@ -2865,8 +2867,8 @@ label {
 .cs-swiper_pagination .swiper-pagination-bullet {
   height: 16px;
   width: 16px;
-  background-color: #6667AB;
-  border: 1px solid #6667AB;
+  background-color: #6941C6;
+  border: 1px solid #6941C6;
   border-radius: 50%;
   margin: 0 8px !important;
   cursor: pointer;
@@ -2886,7 +2888,7 @@ label {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  background-color: #6667AB;
+  background-color: #6941C6;
 }
 
 .cs-swiper_pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
@@ -2953,7 +2955,7 @@ label {
 }
 
 .swiper-vertical > .swiper-pagination-bullets.cs-swiper_pagination.cs-slide_numbers .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  color: #6667AB;
+  color: #6941C6;
 }
 
 .swiper-vertical > .swiper-pagination-bullets.cs-swiper_pagination.cs-slide_numbers .swiper-pagination-bullet:nth-child(1)::after {
@@ -3016,8 +3018,8 @@ label {
 
 .cs-slider_arrows.cs-style1 .slick-arrow:hover {
   color: #fff;
-  background-color: #6667AB;
-  border-color: #6667AB;
+  background-color: #6941C6;
+  border-color: #6941C6;
 }
 
 .cs-slider_arrows.cs-style2 .slick-arrow {
@@ -3147,8 +3149,8 @@ label {
 }
 
 .slider-for .slick-arrow:hover {
-  background-color: #6667AB;
-  border-color: #6667AB;
+  background-color: #6941C6;
+  border-color: #6941C6;
 }
 
 .slider-for .slick-prev {
@@ -3333,7 +3335,7 @@ label {
 6. Video Popup
 ----------------------------------------------------------------*/
 .cs-pd_video .cs-video_open,
-.cs-sample_img .cs-video_open {
+.cs-sample_img .cs-video_open { 
   position: absolute;
   left: 50%;
   top: 50%;
@@ -3854,7 +3856,7 @@ label {
 }
 
 .cs-close:hover {
-  color: #6667AB;
+  color: #6941C6;
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
@@ -3864,7 +3866,7 @@ label {
   right: 5px;
   top: 0;
   font-size: 12px;
-  background-color: #6667AB;
+  background-color: #6941C6;
   color: #fff;
   display: inline-block;
   line-height: 1.6em;
@@ -3899,9 +3901,11 @@ label {
   position: fixed !important;
   top: -110px;
   opacity: 0;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
-  background-color: #ffffff; /*màu nền khi kéo xuống navbar*/
+  background-color: #f5eeffd2; /*màu nền khi kéo xuống navbar*/
 }
 
 .cs-gescout_show {
@@ -3967,14 +3971,15 @@ label {
         -ms-flex-align: center;
             align-items: center;
     height: 100%;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 15px;
     line-height: 1.6em;
-    color: #6667AB; /*màu chữ navbar*/
+    color: #000000; /*màu chữ navbar*/
   }
   .cs-nav  a:hover { /*màu hover navbar*/
     color: #6941C6;
   }
+  
   .cs-nav .cs-nav_list {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
@@ -4021,7 +4026,7 @@ label {
     display: inline-block;
     height: 8px;
     width: 8px;
-    border: 2px solid #ff0000;
+    border: 3px solid #B692F6;
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
     border-left: 0;
@@ -4184,7 +4189,9 @@ ul:not(.cs-mega_wrapper)
     position: absolute;
     width: 100vw;
     left: -15px;
-    background-color: #181818;
+    background-color: rgba(189, 180, 254, 0.963);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
     padding: 10px 0;
     display: none;
     top: 100%;
@@ -4199,6 +4206,7 @@ ul:not(.cs-mega_wrapper)
     display: none;
   }
   .cs-nav .cs-nav_list a {
+    color: #ffffff;
     display: block;
     padding: 8px 20px;
   }
@@ -4259,14 +4267,15 @@ ul:not(.cs-mega_wrapper)
             transition-delay: 0.2s, 0s;
   }
   .cs-site_header.cs-style1 .cs-munu_toggle {
+    color: #000000; /*màu nút hamburger mobile*/
     top: 50%;
     right: 0px;
     margin-top: -13px;
   }
   .cs-toggle_active span {
     background-color: rgba(0, 0, 0, 0);
-    -webkit-transition-delay: 0.2s;
-            transition-delay: 0.2s;
+    -webkit-transition-delay: 0.1s;
+            transition-delay: 0.1s;
   }
   .cs-toggle_active span:before {
     margin-top: 0;
@@ -4380,7 +4389,7 @@ ul:not(.cs-mega_wrapper)
 }
 
 .cs-widget_title { /*Màu chữ tiêu đề footer*/
-  color: #6667AB;
+  color: #6941C6;
   font-size: 18px;
   margin-bottom: 35px;
 }
@@ -4421,13 +4430,13 @@ ul:not(.cs-mega_wrapper)
 }
 
 .cs-social_btns.cs-style1 a:hover {
-  border-color: #6667AB;
+  border-color: #6941C6;
   -webkit-transform: scale(1.08);
           transform: scale(1.08);
 }
 
 .cs-social_btns.cs-style1 a:hover svg {
-  fill: #6667AB;
+  fill: #6941C6;
 }
 
 .cs-newsletter.cs-style1 .cs-newsletter_form {
@@ -4736,7 +4745,7 @@ ul:not(.cs-mega_wrapper)
   left: 50%;
   margin-left: -5px;
   border-radius: 50%;
-  background-color: #6667AB; 
+  background-color: #6941C6; 
   bottom: -5px;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
@@ -4757,7 +4766,7 @@ ul:not(.cs-mega_wrapper)
 }
 
 .cs-isotop_filter.cs-style1 .active a {
-  color: #6667AB;
+  color: #6941C6;
 }
 
 .cs-isotop_filter.cs-style1 .active a::before {
@@ -4887,8 +4896,8 @@ ul:not(.cs-mega_wrapper)
 
 .tag-cloud-link:hover {
   color: #fff;
-  background-color: #6667AB;
-  border-color: #6667AB;
+  background-color: #6941C6;
+  border-color: #6941C6;
 }
 
 .widget_archive ul,
@@ -4986,7 +4995,7 @@ ul:not(.cs-mega_wrapper)
 }
 
 .cs-sidebar_search input:focus {
-  border-color: #6667AB;
+  border-color: #6941C6;
 }
 
 .cs-sidebar_search_btn {
@@ -5003,7 +5012,7 @@ ul:not(.cs-mega_wrapper)
 }
 
 .cs-sidebar_search_btn:hover {
-  color: #6667AB;
+  color: #6941C6;
 }
 
 .cs-author_card img {
@@ -5112,7 +5121,7 @@ ul:not(.cs-mega_wrapper)
 .cs-hero.cs-style3 .cs-hero_social_links a:hover,
 .cs-swiper_parallax_slider_wrap .cs-hero_social_links a:hover,
 .cs-fullscreen_swiper_wrap .cs-hero_social_links a:hover {
-  color: #FF0000; 
+  color: #6941C6; 
 }
 
 .cs-hero.cs-style1 .cs-hero_social_links li,
@@ -5303,7 +5312,7 @@ ul:not(.cs-mega_wrapper)
   width: 0%;
   left: 0;
   top: 50%;
-  background-color: #6667AB;
+  background-color: #6941C6;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
@@ -5491,7 +5500,7 @@ ul:not(.cs-mega_wrapper)
   width: 100%;
   bottom: 8px;
   left: 0;
-  background-color: #6667AB;
+  background-color: #6941C6;
   z-index: -1;
 }
 
@@ -5560,7 +5569,7 @@ ul:not(.cs-mega_wrapper)
 
 .cs-swiper_button_prev:hover,
 .cs-swiper_button_next:hover {
-  color: #6667AB;
+  color: #6941C6;
 }
 
 .cs-swiper_button_prev {
@@ -6049,8 +6058,8 @@ ul:not(.cs-mega_wrapper)
 
 .cs-iconbox_3_list .cs-hover_tab.active .cs-iconbox_icon {
   color: #fff;
-  background-color: #6667AB;
-  border-color: #6667AB;
+  background-color: #6941C6;
+  border-color: #6941C6;
 }
 
 .cs-iconbox_3_list.cs-style1 {
@@ -6107,8 +6116,8 @@ ul:not(.cs-mega_wrapper)
 
 .cs-iconbox.cs-style3 .cs-iconbox_icon:hover {
   color: #fff;
-  background-color: #6667AB;
-  border-color: #6667AB;
+  background-color: #6941C6;
+  border-color: #6941C6;
 }
 
 .cs-iconbox.cs-style3 .cs-iconbox_title {
@@ -6122,8 +6131,8 @@ ul:not(.cs-mega_wrapper)
 
 .cs-iconbox.cs-style3:hover .cs-iconbox_icon {
   color: #fff;
-  background-color: #6667AB;
-  border-color: #6667AB;
+  background-color: #6941C6;
+  border-color: #6941C6;
 }
 
 @-webkit-keyframes inactiveImageAnimation1 {
@@ -6426,7 +6435,7 @@ ul:not(.cs-mega_wrapper)
 .cs-post.cs-style2 blockquote {
   font-size: 18px;
   line-height: 1.9em;
-  border-left: 5px solid #6667AB;
+  border-left: 5px solid #6941C6;
   background-color: #000;
   padding: 40px 35px;
   font-weight: 600;
@@ -6524,7 +6533,7 @@ ul:not(.cs-mega_wrapper)
 }
 
 .cs-post.cs-style3 .cs-text_btn {
-  color: #6667AB;
+  color: #6941C6;
 }
 
 .cs-post.cs-style3 .cs-posted_by {
@@ -6831,6 +6840,29 @@ ul:not(.cs-mega_wrapper)
 .cs-cta.cs-style1 {
   padding: 90px 30px;
   border-radius: 15px;
+  position: relative; /* Đặt vị trí của video */
+  overflow: hidden; /* Đảm bảo video không vượt ra ngoài khung cs-cta */
+}
+
+.cs-cta.cs-style1 video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Đảm bảo video kích thước full-width trong khung cs-cta */
+  height: 100%; /* Đảm bảo video kích thước full-height trong khung cs-cta */
+  object-fit: cover; /* Tùy chỉnh chế độ hiển thị của video, ví dụ 'cover' để bao phủ toàn bộ khung */
+  z-index: 1;
+}
+
+.cs-cta.cs-style1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(112, 3, 254, 0.6) 0%, rgba(101, 101, 101, 0.332) 100%);
+  z-index: 2;
 }
 
 .cs-cta.cs-style1 .cs-cta_in {
@@ -6841,7 +6873,7 @@ ul:not(.cs-mega_wrapper)
 .cs-cta.cs-style1 .cs-cta_title { /*màu phần quote*/
   color: #ffffff;
   font-weight: 600;
-  font-size: 50px;
+  font-size: 70px;
 }
 
 @media screen and (max-width: 1300px) {
@@ -7256,7 +7288,7 @@ ul:not(.cs-mega_wrapper)
   white-space: nowrap;
   letter-spacing: 0.05em;
   color: transparent;
-  -webkit-text-stroke: 2px #6667AB;
+  -webkit-text-stroke: 2px #6941C6;
   font-size: 50px;
 }
 
@@ -7459,14 +7491,15 @@ ul:not(.cs-mega_wrapper)
 
 .cs-funfact.cs-style2 .cs-funfact_title {
   font-size: 22px;
-  color: #999696;
+  color: #ffffff;
   margin: 0;
 }
 
 .cs-funfact_wrap_2 {
-  background: linear-gradient(267.18deg, #161616 0%, #080808 100%);
+  background: linear-gradient(22deg, #B692F6 0%, #D6BBFB 100%);
   -webkit-box-shadow: 0px 0px 25px rgba(123, 123, 123, 0.1);
           box-shadow: 0px 0px 25px rgba(123, 123, 123, 0.1);
+          
   border-radius: 15px;
   padding: 90px 90px 100px;
   position: relative;
@@ -7623,7 +7656,7 @@ ul:not(.cs-mega_wrapper)
   top: -55px;
   height: 135px;
   width: 135px;
-  background: #6667AB;
+  background: #6941C6;
   -webkit-filter: blur(125px);
           filter: blur(125px);
   -webkit-transition: all 0.4s ease;
@@ -8039,7 +8072,7 @@ ul:not(.cs-mega_wrapper)
 
 .rtl .cs-post.cs-style2 blockquote {
   border-left: 0;
-  border-right: 5px solid #6667AB;
+  border-right: 5px solid #6941C6;
 }
 
 .rtl .cs-page_navigation > div:not(:last-child) {
