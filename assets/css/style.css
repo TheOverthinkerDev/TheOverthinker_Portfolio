@@ -8071,7 +8071,7 @@ ul:not(.cs-mega_wrapper)
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
-
+ 
 .rtl .cs-post.cs-style2 blockquote small {
   padding-left: 0;
   padding-right: 35px;
