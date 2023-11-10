@@ -6722,7 +6722,7 @@ ul:not(.cs-mega_wrapper)
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 12px;
+  margin: 19px;
   -webkit-transform: scale(0) rotate(45deg);
           transform: scale(0) rotate(45deg);
   opacity: 0;
@@ -6871,15 +6871,26 @@ ul:not(.cs-mega_wrapper)
   z-index: 2;
 }
 
+.cs-cta_in .cs-text_btn span{
+  color:#ffffff;
+ }
+ 
+ .cs-cta .cs-cta_in a{
+  color:#ffffff;
+ }
+ 
+
 .cs-cta.cs-style1 .cs-cta_title { /*màu phần quote*/
+  font-family: 'Readex Pro', sans-serif;
   color: #ffffff;
   font-weight: 600;
-  font-size: 70px;
+  font-size: 80px;
+  line-height: 1.2;
 }
 
 @media screen and (max-width: 1300px) {
   .cs-cta.cs-style1 .cs-cta_title {
-    font-size: 42px;
+    font-size: 50px;
   }
 }
 
