@@ -25,8 +25,8 @@
   border-radius: 2px;
   &:hover {
     color: $white;
-    background-color: $accent;
-    border-color: $accent;
+    background-color: $primary700;
+    border-color: $primary700;
   }
 }
 .widget_archive,
@@ -105,7 +105,7 @@
   padding: 0px 40px 6px 10px;
   transition: all 0.3s ease;
   &:focus {
-    border-color: $accent;
+    border-color: $primary700;
   }
 }
 .cs-sidebar_search_btn {
@@ -119,7 +119,7 @@
   cursor: pointer;
   transition: all 0.3s ease;
   &:hover {
-    color: $accent;
+    color: $primary700;
   }
 }
 .cs-author_card {

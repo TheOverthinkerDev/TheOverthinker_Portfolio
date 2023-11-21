@@ -1,7 +1,7 @@
 /*--------------------------------------------------------------
   8. Footer
 ----------------------------------------------------------------*/
-.cs-fooer_main {
+ .cs-footer_main {
   padding: 95px 0 35px;
 }
 
@@ -13,6 +13,7 @@
 }
 
 .cs-widget_title {
+  color: $primary700;
   font-size: 18px;
   margin-bottom: 35px;
 }
@@ -22,6 +23,7 @@
   margin: 0;
   list-style: none;
   li {
+    color: $gray900;
     &:not(:last-child) {
       margin-bottom: 20px;
     }
@@ -30,6 +32,7 @@
 
 .cs-text_widget {
   p {
+    color: $gray900;
     margin: 0;
   }
   img + p {
@@ -42,16 +45,17 @@
   flex-wrap: wrap;
   margin: -7px;
   a {
+    color: $primary700; //màu icon footer
     height: 36px;
     width: 36px;
     border-radius: 50%;
-    border: 2px solid $white;
+    border: 2px solid $primary700;
     margin: 7px;
     &:hover {
-      border-color: $accent;
+      border-color: $primary700;
       transform: scale(1.08);
       svg {
-        fill: $accent;
+        fill: $primary700;
       }
     }
   }
@@ -75,7 +79,7 @@
     padding: 7px 25px;
     border-radius: 10px;
     color: $white;
-    background-color: $accent;
+    background-color: $primary700;
     position: absolute;
     top: 5px;
     right: 5px;
@@ -109,13 +113,15 @@
     }
   }
   .cs-newsletter_text {
+    color: $gray900;
     margin-top: 25px;
   }
 }
-.cs-footer_links {
+.cs-footer_links { //màu footer link
   display: flex;
   flex-wrap: wrap;
   li {
+    color: $gray900;
     &:not(:last-child) {
       &::after {
         content: '|';
@@ -142,6 +148,11 @@
   margin-top: 25px;
 }
 
+.cs-bottom_footer .cs-copyright { //màu copyright
+  color: $gray900;
+}
+
+
 @media screen and (max-width: 1199px) {
   .cs-newsletter.cs-style1 {
     .cs-newsletter_btn {
@@ -167,7 +178,7 @@
 .cs-newsletter.cs-style1 .cs-newsletter_text {
   margin-top: 15px;
 }
-.cs-fooer_main {
+ .cs-footer_main {
   padding: 60px 0 15px;
 }
 }

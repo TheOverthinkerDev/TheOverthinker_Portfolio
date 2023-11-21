@@ -128,6 +128,7 @@
 }
 
 .cs-m0 {
+  color: $black;
   margin: 0;
 }
 
@@ -176,7 +177,7 @@ hr {
 
 .cs-accent_color,
 .cs-accent_color_hover:hover {
-  color: $accent;
+  color: $primary700;
 }
 
 .cs-white_bg {
@@ -189,112 +190,112 @@ hr {
 
 .cs-accent_bg_1,
 .cs-accent_bg_1_hover:hover {
-  background-color: rgba($accent, 0.01);
+  background-color: rgba($primary700, 0.01);
 }
 
 .cs-accent_bg_2,
 .cs-accent_bg_2_hover:hover {
-  background-color: rgba($accent, 0.02);
+  background-color: rgba($primary700, 0.02);
 }
 
 .cs-accent_bg_3,
 .cs-accent_bg_3_hover:hover {
-  background-color: rgba($accent, 0.03);
+  background-color: rgba($primary700, 0.03);
 }
 
 .cs-accent_bg_4,
 .cs-accent_bg_4_hover:hover {
-  background-color: rgba($accent, 0.04);
+  background-color: rgba($primary700, 0.04);
 }
 
 .cs-accent_bg_5,
 .cs-accent_bg_5_hover:hover {
-  background-color: rgba($accent, 0.05);
+  background-color: rgba($primary700, 0.05);
 }
 
 .cs-accent_bg_6,
 .cs-accent_bg_6_hover:hover {
-  background-color: rgba($accent, 0.06);
+  background-color: rgba($primary700, 0.06);
 }
 
 .cs-accent_bg_7,
 .cs-accent_bg_7_hover:hover {
-  background-color: rgba($accent, 0.07);
+  background-color: rgba($primary700, 0.07);
 }
 
 .cs-accent_bg_8,
 .cs-accent_bg_8_hover:hover {
-  background-color: rgba($accent, 0.08);
+  background-color: rgba($primary700, 0.08);
 }
 
 .cs-accent_bg_9,
 .cs-accent_bg_9_hover:hover {
-  background-color: rgba($accent, 0.09);
+  background-color: rgba($primary700, 0.09);
 }
 
 .cs-accent_bg_10,
 .cs-accent_bg_10_hover:hover {
-  background-color: rgba($accent, 0.1);
+  background-color: rgba($primary700, 0.1);
 }
 
 .cs-accent_bg_15,
 .cs-accent_bg_15_hover:hover {
-  background-color: rgba($accent, 0.15);
+  background-color: rgba($primary700, 0.15);
 }
 
 .cs-accent_bg_20,
 .cs-accent_bg_20_hover:hover {
-  background-color: rgba($accent, 0.2);
+  background-color: rgba($primary700, 0.2);
 }
 
 .cs-accent_bg_25,
 .cs-accent_bg_25_hover:hover {
-  background-color: rgba($accent, 0.25);
+  background-color: rgba($primary700, 0.25);
 }
 
 .cs-accent_bg_30,
 .cs-accent_bg_30_hover:hover {
-  background-color: rgba($accent, 0.3);
+  background-color: rgba($primary700, 0.3);
 }
 
 .cs-accent_bg_35,
 .cs-accent_bg_35_hover:hover {
-  background-color: rgba($accent, 0.35);
+  background-color: rgba($primary700, 0.35);
 }
 
 .cs-accent_bg_40,
 .cs-accent_bg_40_hover:hover {
-  background-color: rgba($accent, 0.4);
+  background-color: rgba($primary700, 0.4);
 }
 
 .cs-accent_bg_50,
 .cs-accent_bg_50_hover:hover {
-  background-color: rgba($accent, 0.5);
+  background-color: rgba($primary700, 0.5);
 }
 
 .cs-accent_bg_60,
 .cs-accent_bg_60_hover:hover {
-  background-color: rgba($accent, 0.6);
+  background-color: rgba($primary700, 0.6);
 }
 
 .cs-accent_bg_70,
 .cs-accent_bg_70_hover:hover {
-  background-color: rgba($accent, 0.7);
+  background-color: rgba($primary700, 0.7);
 }
 
 .cs-accent_bg_80,
 .cs-accent_bg_80_hover:hover {
-  background-color: rgba($accent, 0.8);
+  background-color: rgba($primary700, 0.8);
 }
 
 .cs-accent_bg_90,
 .cs-accent_bg_90_hover:hover {
-  background-color: rgba($accent, 0.9);
+  background-color: rgba($primary700, 0.9);
 }
 
 .cs-accent_bg,
 .cs-accent_bg_hover:hover {
-  background-color: $accent;
+  background-color: $primary700;
 }
 
 .cs-primary_bg,
@@ -303,6 +304,7 @@ hr {
 }
 
 .cs-gradient_bg_1 {
+  display: none; //phần feedback đã ẩn
   background: linear-gradient(267.18deg, #161616 0%, #080808 100%);
 }
 
@@ -310,7 +312,7 @@ hr {
   display: inline-flex;
   align-items: center;
   font-weight: 600;
-  color: $white;
+  color: $primary700;
   svg {
     margin-left: 15px;
   }
@@ -334,6 +336,7 @@ hr {
     }
   }
   &:hover {
+    color: $gray50; //màu hover nút tải CV
     span {
       &::before {
         transform: scaleX(1);
@@ -381,7 +384,7 @@ hr {
   line-height: 1.5em;
   font-weight: 600;
   border-radius: 15px;
-  background-color: $accent;
+  background-color: $primary700;
   color: #fff;
   cursor: pointer;
   &:before {
@@ -459,7 +462,7 @@ hr {
   border-radius: 5px;
   background-color: #000;
   &.active {
-    background-color: $accent;
+    background-color: $primary700;
     color: #fff;
     pointer-events: none;
   }
@@ -476,7 +479,7 @@ hr {
   background-color: transparent;
   color: #fff;
   &:focus {
-    border-color: $accent;
+    border-color: $primary700;
   }
 }
 label {
@@ -546,12 +549,12 @@ label {
   cursor: pointer;
   &:hover {
     .cs-accordian_title {
-      color: $accent;
+      color: $primary700;
     }
   }
 }
 .cs-accordian {
-  border-bottom: 2px solid $accent;
+  border-bottom: 2px solid $primary700;
   padding-bottom: 25px;
   &:not(:last-child) {
     margin-bottom: 25px;
@@ -603,7 +606,7 @@ label {
 .cs-cursor_lg {
   width: 40px;
   height: 40px;
-  border: 1px solid $accent;
+  border: 1px solid $primary700;
   left: 0;
   top: 0;
   pointer-events: none;
@@ -612,7 +615,7 @@ label {
 .cs-cursor_sm {
   width: 8px;
   height: 8px;
-  background-color: $accent;
+  background-color: $primary700;
   left: 0;
   top: 0;
   pointer-events: none;
@@ -780,7 +783,7 @@ label {
 }
 
 .cs-partner_logo_wrap {
-  display: flex;
+  display: none; //phần partner đã ẩn
   justify-content: space-between;
   margin: 0 -20px;
 }
@@ -794,7 +797,7 @@ label {
   font-size: 120px;
   line-height: 1.2em;
   color: transparent;
-  -webkit-text-stroke: 2px $accent;
+  -webkit-text-stroke: 2px $primary700;
 }
 .cs-moving_text_in {
   display: flex;
@@ -813,14 +816,14 @@ label {
   }
 }
 .cs-moving_text_wrap.cs-type1 {
-  color: $accent;
+  color: $primary700;
   .cs-moving_text {
     padding: 0;
     animation: slide-left 40s linear infinite;
     a {
       &:hover {
         color: transparent;
-        -webkit-text-stroke: 2px $accent;
+        -webkit-text-stroke: 2px $primary700;
       }
     }
   }
@@ -956,11 +959,12 @@ label {
 
 .cs-section_heading.cs-style1 {
   .cs-section_subtitle {
-    color: $ternary;
+    color: $primary700; 
     font-size: 18px;
     margin-bottom: 20px;
   }
-  .cs-section_title {
+  .cs-section_title { //màu tiêu đề
+    color: $gray900;
     font-size: 50px;
     margin-bottom: 0;
   }
@@ -1056,7 +1060,7 @@ label {
   height: 0px;
   border-top: 9px solid transparent;
   border-bottom: 9px solid transparent;
-  border-left: 14px solid $accent;
+  border-left: 14px solid $primary300;
 }
 
 .cs-shape_wrap_1 {
@@ -1104,7 +1108,7 @@ label {
   height: 320px;
   width: 320px;
   div {
-    background-color: #000;
+    background-color: $primary200;
     transform: rotate(45deg);
     height: 100%;
     width: 100%;
@@ -1128,6 +1132,7 @@ label {
   }
 }
 .cs-shape_wrap_4 {
+  display: none; //phần blog đã
   position: relative;
   .cs-shape_4 {
     position: absolute;
@@ -1225,7 +1230,7 @@ label {
     top: -30px;
     height: 151px;
     width: 151px;
-    background: $accent;
+    background: $primary700;
     opacity: 0.8;
     filter: blur(125px);
   }
@@ -1237,7 +1242,7 @@ label {
     display: inline-block;
   }
   .breadcrumb {
-    justify-content: flex-end;
+    justify-content: center;
     margin-bottom: 0;
     color: $ternary;
   }
@@ -1281,7 +1286,7 @@ label {
       width: 100%;
       right: -60px;
       bottom: -60px;
-      background-color: $accent;
+      background-color: $primary700;
       border-radius: inherit;
     }
   }
@@ -1324,7 +1329,7 @@ label {
   li {
     &.active {
       a {
-        background-color: $accent;
+        background-color: $primary700;
         border-radius: 10px;
       }
     }
@@ -1430,11 +1435,11 @@ label {
   transition: all 0.4s ease;
   z-index: 10;
   background-color: #000000;
-  color: $accent;
+  color: $primary700;
   box-shadow: 0px 1px 5px 1px rgba($black, 0.2);
   border-radius: 50%;
   &:hover {
-    background-color: $accent;
+    background-color: $primary700;
     color: $white;
   }
 }
@@ -1482,7 +1487,7 @@ label {
           position: absolute;
           height: 7px;
           width: 0%;
-          background-color: $accent;
+          background-color: $primary700;
           left: 0;
           bottom: 20px;
           z-index: -1;

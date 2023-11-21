@@ -101,7 +101,7 @@
   blockquote {
     font-size: 18px;
     line-height: 1.9em;
-    border-left: 5px solid $accent;
+    border-left: 5px solid $primary700;
     background-color: #000;
     padding: 40px 35px;
     font-weight: 600;
@@ -174,7 +174,7 @@
     }
   }
   .cs-text_btn {
-    color: $accent;
+    color: $primary700;
   }
   .cs-posted_by {
     display: flex;

@@ -4,14 +4,40 @@
 .cs-cta.cs-style1 {
   padding: 90px 30px;
   border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+    video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Đảm bảo video kích thước full-width trong khung cs-cta */
+    height: 100%; /* Đảm bảo video kích thước full-height trong khung cs-cta */
+    object-fit: cover; /* Tùy chỉnh chế độ hiển thị của video, ví dụ 'cover' để bao phủ toàn bộ khung */
+    z-index: 1;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(112, 3, 254, 0.6) 0%, rgba(101, 101, 101, 0.332) 100%);
+    border-radius: 15px;
+    z-index: 2;
+  } 
+
   .cs-cta_in {
     position: relative;
     z-index: 2;
   }
   .cs-cta_title {
+    font-family: 'Readex Pro', sans-serif;
     font-weight: 600;
-    font-size: 50px;
+    font-size: 80px;
+    line-height: 1.2;
   }
+
 }
 @media screen and (max-width: 1300px) {
   .cs-cta.cs-style1 .cs-cta_title {

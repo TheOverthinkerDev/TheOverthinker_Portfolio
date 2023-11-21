@@ -8,7 +8,7 @@
     display: inline-block;
     background: linear-gradient(
       90deg,
-      rgba($accent, 0.3) 0%,
+      rgba($primary700, 0.3) 0%,
       transparent 95.61%
     );
   }
@@ -68,8 +68,8 @@
     }
     .cs-iconbox_icon {
       color: #fff;
-      background-color: $accent;
-      border-color: $accent;
+      background-color: $primary700;
+      border-color: $primary700;
     }
   }
   &.cs-style1 {
@@ -107,8 +107,8 @@
     transition: all 0.3s ease;
     &:hover {
       color: #fff;
-      background-color: $accent;
-      border-color: $accent;
+      background-color: $primary700;
+      border-color: $primary700;
     }
   }
   .cs-iconbox_title {
@@ -121,8 +121,8 @@
   &:hover {
     .cs-iconbox_icon {
       color: #fff;
-      background-color: $accent;
-      border-color: $accent;
+      background-color: $primary700;
+      border-color: $primary700;
     }
   }
 }
